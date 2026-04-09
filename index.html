@@ -136,12 +136,10 @@
     </style>
 </head>
 <body class="bg-surface text-on-surface font-body selection:bg-primary selection:text-on-primary">
-<!-- TopNavBar -->
+<!-- Nav -->
 <nav class="fixed top-0 w-full z-50 bg-[#0b0f10]/80 backdrop-blur-xl border-b border-outline-variant/10">
-<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
-<div class="flex items-center gap-3">
-<span class="text-2xl font-bold tracking-tighter text-[#fafdfe] font-headline">e-commotion.ch</span>
-</div>
+<div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+<a href="index.html" class="text-xl font-bold tracking-tighter text-[#fafdfe] font-headline">e-commotion.ch</a>
 <div class="hidden md:flex items-center space-x-8 font-headline tracking-tight">
 <a class="text-[#cf96ff] font-bold border-b-2 border-[#cf96ff] pb-1 transition-colors duration-300" href="index.html">Home</a>
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors duration-300" href="leistungen.html">Leistungen</a>
@@ -149,9 +147,38 @@
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors duration-300" href="ueber.html">Über e-commotion</a>
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors duration-300" href="kontakt.html">Kontakt</a>
 </div>
-<a href="kontakt.html" class="kinetic-gradient text-on-surface font-bold px-6 py-2.5 rounded-lg transform active:scale-95 transition-all duration-300 shadow-[0_0_30px_rgba(141,0,230,0.1)]">Kostenlos beraten lassen</a>
+<div class="flex items-center gap-3">
+<a href="kontakt.html" class="hidden md:inline-block kinetic-gradient text-on-surface font-bold px-5 py-2 rounded-full text-sm active:scale-95 transition-all duration-300">Beraten lassen</a>
+<button id="menu-toggle" class="md:hidden flex flex-col gap-1.5 p-2" onclick="toggleMenu()" aria-label="Menü öffnen">
+<span class="w-6 h-0.5 bg-[#fafdfe] transition-all duration-300" id="bar1"></span>
+<span class="w-6 h-0.5 bg-[#fafdfe] transition-all duration-300" id="bar2"></span>
+<span class="w-6 h-0.5 bg-[#fafdfe] transition-all duration-300" id="bar3"></span>
+</button>
+</div>
+</div>
+<div id="mobile-menu" class="hidden md:hidden bg-[#0b0f10] border-t border-outline-variant/10 px-6 py-4 flex flex-col gap-1 font-headline">
+<a class="text-[#cf96ff] font-bold py-2 border-b border-outline-variant/10" href="index.html">Home</a>
+<a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10" href="leistungen.html">Leistungen</a>
+<a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10" href="projekte.html">Projekte</a>
+<a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10" href="ueber.html">Über e-commotion</a>
+<a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10" href="kontakt.html">Kontakt</a>
+<a href="kontakt.html" class="kinetic-gradient text-on-surface font-bold px-6 py-3 rounded-full text-center mt-4">Kostenlos beraten lassen</a>
 </div>
 </nav>
+<script>
+function toggleMenu() {
+  const menu = document.getElementById('mobile-menu');
+  const b1 = document.getElementById('bar1');
+  const b2 = document.getElementById('bar2');
+  const b3 = document.getElementById('bar3');
+  menu.classList.toggle('hidden');
+  b1.classList.toggle('rotate-45');
+  b1.classList.toggle('translate-y-2');
+  b3.classList.toggle('-rotate-45');
+  b3.classList.toggle('-translate-y-2');
+  b2.classList.toggle('opacity-0');
+}
+</script>
 <main class="relative">
 <!-- Hero Section -->
 <section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
@@ -167,10 +194,7 @@
                         SEO & GEO-Optimierung, Onlineshop-Analyse, Conversion-Steigerung und E-Commerce-Strategie – ich helfe Dir dabei, Deinen Onlineshop sichtbarer zu machen, mehr Besucher zu gewinnen und daraus echte Kunden zu machen.
                     </p>
 <div class="flex flex-wrap gap-4">
-<a href="kontakt.html" class="kinetic-gradient text-on-surface font-bold px-8 py-4 rounded-lg flex items-center gap-2 group transition-all">Kostenloses Erstgespräch<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span></a>
-<button class="bg-surface-container-high ghost-border text-on-surface font-bold px-8 py-4 rounded-lg hover:bg-surface-container-highest transition-colors">
-                            Meine Methode
-                        </button>
+<a href="kontakt.html" class="kinetic-gradient text-on-surface font-bold px-8 py-4 rounded-full flex items-center gap-2 group transition-all">Kostenloses Erstgespräch<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span></a>
 </div>
 </div>
 <div class="md:col-span-5 relative">
@@ -455,8 +479,8 @@
 <h2 class="text-5xl md:text-6xl font-extrabold font-headline tracking-tighter mb-8">Bereit, Deinen Shop auf das nächste Level zu <span class="text-primary italic">heben?</span></h2>
 <p class="text-xl text-on-surface-variant mb-12 max-w-2xl mx-auto leading-relaxed">Lass uns in einem kostenlosen Erstgespräch herausfinden, wo Dein grösster Hebel liegt – und wie ich Dir helfen kann, nachhaltiges Wachstum für Deinen Schweizer Online-Shop zu erzielen.</p>
 <div class="flex flex-col md:flex-row justify-center items-center gap-6">
-<a href="kontakt.html" class="kinetic-gradient text-on-surface font-bold px-12 py-5 rounded-lg text-lg transform hover:scale-105 active:scale-95 transition-all shadow-2xl inline-block">Jetzt kostenlos beraten lassen</a>
-<span class="text-on-surface-variant font-label text-sm uppercase tracking-widest">Nur begrenzte Plätze pro Monat verfügbar</span>
+<a href="kontakt.html" class="kinetic-gradient text-on-surface font-bold px-12 py-5 rounded-full text-lg transform hover:scale-105 active:scale-95 transition-all shadow-2xl inline-block">Jetzt kostenlos beraten lassen</a>
+
 </div>
 </div>
 <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[500px] kinetic-gradient blur-[180px] opacity-10 rounded-full"></div>
@@ -464,7 +488,7 @@
 </main>
 <!-- Impressum Modal -->
 <div id="impressum-modal" class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/60 backdrop-blur-sm">
-<div class="bg-surface-container-high rounded-xl p-10 max-w-md w-full mx-4 relative ghost-border">
+<div class="bg-surface-container-high rounded-xl p-8 max-w-md w-full mx-4 relative ghost-border">
 <button onclick="document.getElementById('impressum-modal').classList.add('hidden');document.getElementById('impressum-modal').classList.remove('flex');" class="absolute top-4 right-4 text-on-surface-variant hover:text-primary transition-colors">
 <span class="material-symbols-outlined">close</span>
 </button>
@@ -479,13 +503,13 @@
 </div>
 </div>
 <!-- Footer -->
-<footer class="bg-[#0b0f10] w-full py-12 px-8 border-t border-outline-variant/10">
-<div class="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto space-y-8 md:space-y-0">
-<div class="flex flex-col items-center md:items-start">
-<a href="index.html" class="text-xl font-black text-[#fafdfe] font-headline mb-2">e-commotion.ch</a>
-<p class="text-[#fafdfe] opacity-50 font-['Manrope'] text-sm">© 2026 e-commotion.ch. Alle Rechte vorbehalten. · Schweiz</p>
+<footer class="bg-[#0b0f10] w-full py-10 px-6 border-t border-outline-variant/10">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex flex-col items-center md:items-start gap-1">
+<a href="index.html" class="text-lg font-black text-[#fafdfe] font-headline">e-commotion.ch</a>
+<p class="text-[#fafdfe] opacity-40 font-['Manrope'] text-xs">© 2026 e-commotion.ch · Alle Rechte vorbehalten · Schweiz</p>
 </div>
-<div class="flex gap-8 font-['Manrope'] text-sm flex-wrap justify-center">
+<div class="flex flex-wrap justify-center gap-6 font-['Manrope'] text-sm">
 <a class="text-[#fafdfe] opacity-50 hover:text-[#cf96ff] hover:opacity-100 transition-opacity" href="#">Datenschutz</a>
 <button onclick="document.getElementById('impressum-modal').classList.remove('hidden');document.getElementById('impressum-modal').classList.add('flex');" class="text-[#fafdfe] opacity-50 hover:text-[#cf96ff] hover:opacity-100 transition-opacity cursor-pointer bg-transparent border-0 font-['Manrope'] text-sm p-0">Impressum</button>
 <a class="text-[#fafdfe] opacity-50 hover:text-[#cf96ff] hover:opacity-100 transition-opacity" href="https://www.linkedin.com/company/e-commotion" target="_blank" rel="noopener">LinkedIn</a>
@@ -493,4 +517,11 @@
 </div>
 </div>
 </footer>
+<!-- Sticky Mobile CTA -->
+<div class="fixed bottom-6 left-0 right-0 flex justify-center z-40 md:hidden px-6">
+<a href="kontakt.html" class="kinetic-gradient text-on-surface font-bold px-8 py-4 rounded-full text-sm shadow-[0_8px_30px_rgba(141,0,230,0.4)] flex items-center gap-2 active:scale-95 transition-all duration-300">
+<span class="material-symbols-outlined" style="font-size:18px;">chat</span>
+Kostenlos beraten lassen
+</a>
+</div>
 </body></html>
