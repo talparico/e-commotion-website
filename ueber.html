@@ -293,7 +293,7 @@ function toggleMenu() {
 <p class="text-[#fafdfe] opacity-40 font-['Manrope'] text-xs">© 2026 e-commotion.ch · Alle Rechte vorbehalten · Schweiz</p>
 </div>
 <div class="flex flex-wrap justify-center gap-6 font-['Manrope'] text-sm">
-<a class="text-[#fafdfe] opacity-50 hover:text-[#cf96ff] hover:opacity-100 transition-opacity" href="#">Datenschutz</a>
+<a class="text-[#fafdfe] opacity-50 hover:text-[#cf96ff] hover:opacity-100 transition-opacity" href="datenschutz.html">Datenschutz</a>
 <button onclick="document.getElementById('impressum-modal').classList.remove('hidden');document.getElementById('impressum-modal').classList.add('flex');" class="text-[#fafdfe] opacity-50 hover:text-[#cf96ff] hover:opacity-100 transition-opacity cursor-pointer bg-transparent border-0 font-['Manrope'] text-sm p-0">Impressum</button>
 <a class="text-[#fafdfe] opacity-50 hover:text-[#cf96ff] hover:opacity-100 transition-opacity" href="https://www.linkedin.com/company/e-commotion" target="_blank" rel="noopener">LinkedIn</a>
 <a class="text-[#fafdfe] opacity-50 hover:text-[#cf96ff] hover:opacity-100 transition-opacity" href="https://www.instagram.com/e_commotion_ch" target="_blank" rel="noopener">Instagram</a>
@@ -307,4 +307,36 @@ function toggleMenu() {
 Kostenlos beraten lassen
 </a>
 </div>
+<!-- Cookie Banner -->
+<div id="cookie-banner" class="fixed bottom-0 left-0 right-0 z-[200] md:bottom-6 md:left-6 md:right-auto md:max-w-md bg-[#0b0f10] border border-outline-variant/30 rounded-none md:rounded-xl p-6 shadow-2xl" style="display:none;">
+  <p class="text-sm text-on-surface-variant leading-relaxed mb-4">
+    Diese Webseite verwendet Cookies, um die Nutzererfahrung zu verbessern. Mit der Nutzung stimmst Du unserer 
+    <a href="datenschutz.html" class="text-primary underline hover:opacity-80">Datenschutzrichtlinie</a> zu.
+  </p>
+  <div class="flex flex-col sm:flex-row gap-3">
+    <button onclick="acceptCookies()" class="kinetic-gradient text-on-surface font-bold px-6 py-2.5 rounded-full text-sm flex-1 active:scale-95 transition-all">
+      Alle akzeptieren
+    </button>
+    <button onclick="declineCookies()" class="bg-surface-container-high text-on-surface-variant font-bold px-6 py-2.5 rounded-full text-sm flex-1 hover:bg-surface-container-highest transition-all">
+      Nur notwendige
+    </button>
+  </div>
+</div>
+<script>
+  function showCookieBanner() {
+    const consent = localStorage.getItem('cookie-consent');
+    if (!consent) {
+      document.getElementById('cookie-banner').style.display = 'block';
+    }
+  }
+  function acceptCookies() {
+    localStorage.setItem('cookie-consent', 'accepted');
+    document.getElementById('cookie-banner').style.display = 'none';
+  }
+  function declineCookies() {
+    localStorage.setItem('cookie-consent', 'declined');
+    document.getElementById('cookie-banner').style.display = 'none';
+  }
+  window.addEventListener('DOMContentLoaded', showCookieBanner);
+</script>
 </body></html>
