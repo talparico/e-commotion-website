@@ -328,7 +328,7 @@ Kostenlos beraten lassen
 </a>
 </div>
 <!-- Cookie Banner -->
-<div id="cookie-banner" class="fixed bottom-0 left-0 right-0 z-[200] md:bottom-6 md:left-6 md:right-auto md:max-w-md bg-[#0b0f10] border border-outline-variant/30 rounded-none md:rounded-xl p-6 shadow-2xl" style="display:none;">
+<div id="cookie-banner" class="fixed bottom-0 left-0 right-0 z-[200] md:bottom-6 md:left-6 md:right-auto md:max-w-md bg-[#0b0f10]/95 backdrop-blur-xl border-t border-outline-variant/30 md:border md:rounded-xl p-6 shadow-2xl" style="display:none;">
   <p class="text-sm text-on-surface-variant leading-relaxed mb-4">
     Diese Webseite verwendet Cookies, um die Nutzererfahrung zu verbessern. Mit der Nutzung stimmst Du unserer 
     <a href="datenschutz.html" class="text-primary underline hover:opacity-80">Datenschutzrichtlinie</a> zu.
@@ -344,9 +344,10 @@ Kostenlos beraten lassen
 </div>
 <script>
   function showCookieBanner() {
-    const consent = localStorage.getItem('cookie-consent');
-    if (!consent) {
-      document.getElementById('cookie-banner').style.display = 'block';
+    if (!localStorage.getItem('cookie-consent')) {
+      setTimeout(function() {
+        document.getElementById('cookie-banner').style.display = 'block';
+      }, 1500);
     }
   }
   function acceptCookies() {
