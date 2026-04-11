@@ -135,7 +135,13 @@
 <a href="index.html" class="text-xl font-bold tracking-tighter text-[#fafdfe] font-headline">e-commotion.ch</a>
 <div class="hidden md:flex items-center space-x-8 font-headline tracking-tight">
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors duration-300" href="index.html">Home</a>
-<a class="text-[#cf96ff] font-bold border-b-2 border-[#cf96ff] pb-1 transition-colors duration-300" href="leistungen.html">Leistungen</a>
+<div class="relative group/nav">
+<a class="text-[#cf96ff] font-bold border-b-2 border-[#cf96ff] pb-1 transition-colors duration-300 flex items-center gap-1" href="leistungen.html">Leistungen <span class="material-symbols-outlined text-sm" style="font-size:16px">expand_more</span></a>
+<div class="absolute top-full left-0 mt-2 w-56 bg-[#0b0f10] border border-outline-variant/30 rounded-xl p-2 hidden group-hover/nav:block shadow-xl z-50">
+<a href="leistungen.html" class="block px-4 py-2.5 text-sm text-[#fafdfe] opacity-70 hover:text-[#cf96ff] hover:opacity-100 rounded-lg transition-colors">Alle Leistungen</a>
+<a href="seo-geo.html" class="block px-4 py-2.5 text-sm text-[#fafdfe] opacity-70 hover:text-[#cf96ff] hover:opacity-100 rounded-lg transition-colors flex items-center gap-2"><span class="material-symbols-outlined text-primary" style="font-size:14px">search</span>SEO & GEO-Optimierung</a>
+</div>
+</div>
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors duration-300" href="projekte.html">Projekte</a>
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors duration-300" href="ueber.html">Über e-commotion</a>
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors duration-300" href="kontakt.html">Kontakt</a>
@@ -152,6 +158,7 @@
 <div id="mobile-menu" class="hidden md:hidden bg-[#0b0f10] border-t border-outline-variant/10 px-6 py-4 flex flex-col gap-1 font-headline">
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10" href="index.html">Home</a>
 <a class="text-[#cf96ff] font-bold py-2 border-b border-outline-variant/10" href="leistungen.html">Leistungen</a>
+<a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10 pl-4 text-sm flex items-center gap-2" href="seo-geo.html"><span class="text-primary">↳</span> SEO & GEO-Optimierung</a>
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10" href="projekte.html">Projekte</a>
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10" href="ueber.html">Über e-commotion</a>
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10" href="kontakt.html">Kontakt</a>
@@ -188,7 +195,7 @@ function toggleMenu() {
 So werden wir <span class="text-primary italic">zusammen erfolgreich.</span>
 </h1>
 <p class="text-on-surface-variant text-lg md:text-xl max-w-2xl leading-relaxed">
-Kein Copy-Paste, keine Standardlösungen. Als Freelancer mit eigener Agentur arbeite ich direkt mit Dir – ich entwickle massgeschneiderte E-Commerce-Strategien für Deinen Shop, von der SEO-Optimierung über den Checkout bis zur langfristigen Kundenbindung.
+Kein Copy-Paste und keine Standardlösungen. Als Freelancer mit eigener Agentur arbeite ich direkt mit Dir und entwickle eine Strategie, die zu Deinem Shop und Deinen Zielen passt.
 </p>
 </div>
 </section>
@@ -197,11 +204,11 @@ Kein Copy-Paste, keine Standardlösungen. Als Freelancer mit eigener Agentur arb
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
 <!-- Service 1: SEO & GEO – volle Breite -->
-<div class="md:col-span-2 lg:col-span-3 bg-surface-container rounded-xl p-8 md:p-12 hover:bg-surface-container-high transition-colors duration-300 border border-outline-variant/20">
+<a href="seo-geo.html" class="md:col-span-2 lg:col-span-3 bg-surface-container rounded-xl p-8 md:p-12 hover:bg-surface-container-high transition-colors duration-300 border border-primary/30 block group">
 <span class="material-symbols-outlined text-primary text-4xl mb-6 block">insights</span>
 <h3 class="font-headline text-3xl font-bold mb-4">E-Commerce Strategie, SEO & GEO</h3>
 <p class="text-on-surface-variant text-lg mb-8">
-Ich analysiere Deine Marktposition und entwickle eine klare Roadmap für nachhaltiges Wachstum – im Schweizer Markt und im gesamten DACH-Raum. Von SEO- und GEO-Optimierung über Quick Fixes bis zur Expansionsstrategie: Ich liefere Dir klare Antworten, keine langen Präsentationen.
+Ich analysiere Deine Marktposition und entwickle eine klare Roadmap für nachhaltiges Wachstum. Von SEO und GEO über Quick Fixes bis zur Expansionsstrategie liefere ich Dir konkrete Antworten und keine langen Präsentationen.
 </p>
 <div class="flex flex-wrap gap-2">
 <span class="bg-primary/20 text-primary border border-primary/30 px-4 py-1 rounded-full text-xs font-label uppercase tracking-widest">Marktanalyse</span>
@@ -210,14 +217,15 @@ Ich analysiere Deine Marktposition und entwickle eine klare Roadmap für nachhal
 <span class="bg-primary/20 text-primary border border-primary/30 px-4 py-1 rounded-full text-xs font-label uppercase tracking-widest">Roadmap</span>
 <span class="bg-primary/20 text-primary border border-primary/30 px-4 py-1 rounded-full text-xs font-label uppercase tracking-widest">Coaching</span>
 </div>
-</div>
+<span class="text-primary text-xs font-label mt-6 flex items-center gap-1">Alle Details ansehen →</span>
+</a>
 
 <!-- Service 2: CRO -->
 <div class="bg-surface-container-highest rounded-xl p-8 hover:bg-surface-variant transition-colors duration-300 border border-outline-variant/20">
 <span class="material-symbols-outlined text-primary text-4xl mb-6 block">trending_up</span>
 <h3 class="font-headline text-2xl font-bold mb-4">Conversion-Optimierung</h3>
 <p class="text-on-surface-variant mb-6">
-Mit A/B-Tests, Heatmapping und gezielten Triggern verwandle ich Deinen Traffic in messbaren Umsatz. Ich finde die Schwachstellen in Deinem Funnel – und behebe sie systematisch.
+Mehr Käufer aus dem gleichen Traffic. Ich analysiere wo Besucher abspringen und behebe diese Punkte mit A/B-Tests, Heatmapping und gezielten Optimierungen.
 </p>
 <div class="flex flex-wrap gap-2">
 <span class="bg-primary/20 text-primary border border-primary/30 px-4 py-1 rounded-full text-xs font-label uppercase tracking-widest">A/B-Testing</span>
@@ -231,7 +239,7 @@ Mit A/B-Tests, Heatmapping und gezielten Triggern verwandle ich Deinen Traffic i
 <span class="material-symbols-outlined text-primary text-4xl mb-6 block">palette</span>
 <h3 class="font-headline text-2xl font-bold mb-4">UX/UI Design für Shops</h3>
 <p class="text-on-surface-variant mb-6">
-Ich gestalte digitale Einkaufserlebnisse, die überzeugen und konvertieren – reibungslose Checkout-Flows und ein stimmiges Markenerlebnis, damit Deine Besucher zu Käufern werden.
+Ich gestalte Einkaufserlebnisse die überzeugen. Reibungslose Checkout-Flows und ein stimmiges Markenerlebnis damit Deine Besucher zu Käufern werden.
 </p>
 <div class="flex flex-wrap gap-2">
 <span class="bg-primary/20 text-primary border border-primary/30 px-4 py-1 rounded-full text-xs font-label uppercase tracking-widest">Checkout-Optimierung</span>
@@ -245,7 +253,7 @@ Ich gestalte digitale Einkaufserlebnisse, die überzeugen und konvertieren – r
 <span class="material-symbols-outlined text-primary text-4xl mb-6 block">loyalty</span>
 <h3 class="font-headline text-2xl font-bold mb-4">Kundenbindung & Retention</h3>
 <p class="text-on-surface-variant mb-6">
-Ein Erstkauf ist erst der Anfang. Ich helfe Dir, Deine Kunden langfristig zu binden – durch E-Mail-Flows, Messaging und personalisierte Kommunikation, die wirklich ankommt.
+Ein Erstkauf ist erst der Anfang. Ich helfe Dir Kunden langfristig zu binden mit E-Mail-Flows, Messaging und Kommunikation die wirklich ankommt.
 </p>
 <div class="flex flex-wrap gap-2">
 <span class="bg-primary/20 text-primary border border-primary/30 px-4 py-1 rounded-full text-xs font-label uppercase tracking-widest">E-Mail-Marketing</span>
@@ -259,7 +267,7 @@ Ein Erstkauf ist erst der Anfang. Ich helfe Dir, Deine Kunden langfristig zu bin
 <span class="material-symbols-outlined text-primary text-4xl mb-6 block">auto_awesome</span>
 <h3 class="font-headline text-2xl font-bold mb-4">AI-Tools gezielt einsetzen</h3>
 <p class="text-on-surface-variant mb-6">
-AI ist nur so gut wie die Person, die damit arbeitet. Ich zeige Dir, wie Du Bots, Automationen und Prompts so einsetzt, dass sie Dir wirklich Zeit sparen – praxisnah und direkt anwendbar auf Deinen Shop.
+AI ist nur so gut wie die Person dahinter. Ich zeige Dir wie Du Bots, Automationen und Prompts sinnvoll einsetzt um echte Zeit zu sparen.
 </p>
 <div class="flex flex-wrap gap-2">
 <span class="bg-primary/20 text-primary border border-primary/30 px-4 py-1 rounded-full text-xs font-label uppercase tracking-widest">Prompt-Engineering</span>
@@ -274,7 +282,7 @@ AI ist nur so gut wie die Person, die damit arbeitet. Ich zeige Dir, wie Du Bots
 <span class="material-symbols-outlined text-primary text-4xl mb-6 block">groups</span>
 <h3 class="font-headline text-2xl font-bold mb-4">Social Media</h3>
 <p class="text-on-surface-variant mb-6">
-Social Media ist ein eigenes Handwerk. Deshalb arbeite ich mit einem erfahrenen Social Media Experten zusammen – damit Dein Auftritt auf Instagram, LinkedIn & Co. professionell, konsistent und wirkungsvoll ist. Von der Strategie bis zur Umsetzung, alles aus einer Hand.
+Social Media ist ein eigenes Handwerk. Ich arbeite mit einem erfahrenen Experten zusammen damit Dein Auftritt auf Instagram und LinkedIn professionell und wirkungsvoll ist.
 </p>
 <div class="flex flex-wrap gap-2">
 <span class="bg-primary/20 text-primary border border-primary/30 px-4 py-1 rounded-full text-xs font-label uppercase tracking-widest">Instagram</span>

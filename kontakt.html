@@ -124,7 +124,13 @@
 <a href="index.html" class="text-xl font-bold tracking-tighter text-[#fafdfe] font-headline">e-commotion.ch</a>
 <div class="hidden md:flex items-center space-x-8 font-headline tracking-tight">
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors duration-300" href="index.html">Home</a>
-<a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors duration-300" href="leistungen.html">Leistungen</a>
+<div class="relative group/nav">
+<a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors duration-300 flex items-center gap-1" href="leistungen.html">Leistungen <span class="material-symbols-outlined text-sm" style="font-size:16px">expand_more</span></a>
+<div class="absolute top-full left-0 mt-2 w-56 bg-[#0b0f10] border border-outline-variant/30 rounded-xl p-2 hidden group-hover/nav:block shadow-xl z-50">
+<a href="leistungen.html" class="block px-4 py-2.5 text-sm text-[#fafdfe] opacity-70 hover:text-[#cf96ff] hover:opacity-100 rounded-lg transition-colors">Alle Leistungen</a>
+<a href="seo-geo.html" class="block px-4 py-2.5 text-sm text-[#fafdfe] opacity-70 hover:text-[#cf96ff] hover:opacity-100 rounded-lg transition-colors flex items-center gap-2"><span class="material-symbols-outlined text-primary" style="font-size:14px">search</span>SEO & GEO-Optimierung</a>
+</div>
+</div>
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors duration-300" href="projekte.html">Projekte</a>
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors duration-300" href="ueber.html">Über e-commotion</a>
 <a class="text-[#cf96ff] font-bold border-b-2 border-[#cf96ff] pb-1 transition-colors duration-300" href="kontakt.html">Kontakt</a>
@@ -141,6 +147,7 @@
 <div id="mobile-menu" class="hidden md:hidden bg-[#0b0f10] border-t border-outline-variant/10 px-6 py-4 flex flex-col gap-1 font-headline">
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10" href="index.html">Home</a>
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10" href="leistungen.html">Leistungen</a>
+<a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10 pl-4 text-sm flex items-center gap-2" href="seo-geo.html"><span class="text-primary">↳</span> SEO & GEO-Optimierung</a>
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10" href="projekte.html">Projekte</a>
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10" href="ueber.html">Über e-commotion</a>
 <a class="text-[#cf96ff] font-bold py-2 border-b border-outline-variant/10" href="kontakt.html">Kontakt</a>
@@ -170,7 +177,7 @@ function toggleMenu() {
                 Lass uns gemeinsam<br/><span class="text-primary italic">Deinen nächsten Schritt planen.</span>
 </h1>
 <p class="max-w-2xl text-on-surface-variant text-lg leading-relaxed">
-                Egal ob Du Deinen bestehenden Shop optimieren oder neu durchstarten möchtest – ich höre zu, analysiere und zeige Dir konkret, wo der grösste Hebel liegt. Unverbindlich und direkt.
+                Ob Du Deinen bestehenden Shop optimieren oder neu durchstarten möchtest – ich höre zu, analysiere und zeige Dir wo der grösste Hebel liegt. Unverbindlich und direkt.
             </p>
 </div>
 <!-- Main Content: Asymmetric Layout -->
@@ -184,7 +191,8 @@ function toggleMenu() {
   </div>
   <div>
     <p class="font-headline font-bold text-on-surface text-lg">Rico Thalparpan</p>
-    <p class="text-sm text-primary font-label">Gründer & Inhaber · e-commotion.ch</p>
+    <p class="text-sm text-primary font-label whitespace-nowrap">Gründer & Inhaber</p>
+    <p class="text-sm text-primary font-label">e-commotion.ch</p>
   </div>
 </div>
 <div>

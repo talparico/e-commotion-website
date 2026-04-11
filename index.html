@@ -142,7 +142,13 @@
 <a href="index.html" class="text-xl font-bold tracking-tighter text-[#fafdfe] font-headline">e-commotion.ch</a>
 <div class="hidden md:flex items-center space-x-8 font-headline tracking-tight">
 <a class="text-[#cf96ff] font-bold border-b-2 border-[#cf96ff] pb-1 transition-colors duration-300" href="index.html">Home</a>
-<a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors duration-300" href="leistungen.html">Leistungen</a>
+<div class="relative group/nav">
+<a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors duration-300 flex items-center gap-1" href="leistungen.html">Leistungen <span class="material-symbols-outlined text-sm" style="font-size:16px">expand_more</span></a>
+<div class="absolute top-full left-0 mt-2 w-56 bg-[#0b0f10] border border-outline-variant/30 rounded-xl p-2 hidden group-hover/nav:block shadow-xl z-50">
+<a href="leistungen.html" class="block px-4 py-2.5 text-sm text-[#fafdfe] opacity-70 hover:text-[#cf96ff] hover:opacity-100 rounded-lg transition-colors">Alle Leistungen</a>
+<a href="seo-geo.html" class="block px-4 py-2.5 text-sm text-[#fafdfe] opacity-70 hover:text-[#cf96ff] hover:opacity-100 rounded-lg transition-colors flex items-center gap-2"><span class="material-symbols-outlined text-primary" style="font-size:14px">search</span>SEO & GEO-Optimierung</a>
+</div>
+</div>
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors duration-300" href="projekte.html">Projekte</a>
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors duration-300" href="ueber.html">Über e-commotion</a>
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors duration-300" href="kontakt.html">Kontakt</a>
@@ -159,6 +165,7 @@
 <div id="mobile-menu" class="hidden md:hidden bg-[#0b0f10] border-t border-outline-variant/10 px-6 py-4 flex flex-col gap-1 font-headline">
 <a class="text-[#cf96ff] font-bold py-2 border-b border-outline-variant/10" href="index.html">Home</a>
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10" href="leistungen.html">Leistungen</a>
+<a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10 pl-4 text-sm flex items-center gap-2" href="seo-geo.html"><span class="text-primary">↳</span> SEO & GEO-Optimierung</a>
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10" href="projekte.html">Projekte</a>
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10" href="ueber.html">Über e-commotion</a>
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10" href="kontakt.html">Kontakt</a>
@@ -198,7 +205,7 @@ function toggleMenu() {
 </h1>
 <p class="text-primary font-label text-sm font-bold tracking-[0.2em] uppercase mb-8">Pure Motion. Pure Commerce.</p>
 <p class="text-lg md:text-xl text-on-surface-variant max-w-xl leading-relaxed mb-10">
-                        SEO & GEO-Optimierung, Onlineshop-Analyse, Conversion-Steigerung und E-Commerce-Strategie – ich helfe Dir dabei, Deinen Onlineshop sichtbarer zu machen, mehr Besucher zu gewinnen und daraus echte Kunden zu machen.
+                        Ich helfe Dir dabei, Deinen Onlineshop sichtbarer zu machen: mit SEO, GEO, gezielter Analyse und einer Strategie, die wirklich mehr Kunden bringt.
                     </p>
 <div class="flex flex-wrap gap-4">
 <a href="kontakt.html" class="kinetic-gradient text-on-surface font-bold px-8 py-4 rounded-full flex items-center gap-2 group transition-all">Kostenloses Erstgespräch<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span></a>
@@ -386,15 +393,16 @@ ALLE LEISTUNGEN <span class="material-symbols-outlined group-hover:ml-2 transiti
 </a>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-<div class="bg-surface-container-highest rounded-xl p-6 border border-outline-variant/20 hover:bg-surface-variant transition-colors duration-300">
+<a href="seo-geo.html" class="bg-surface-container-highest rounded-xl p-6 border border-primary/30 hover:bg-surface-variant transition-colors duration-300 block group">
 <span class="material-symbols-outlined text-primary text-3xl mb-4 block">insights</span>
-<h3 class="font-headline text-lg font-bold mb-2">SEO & GEO-Optimierung</h3>
-<p class="text-on-surface-variant text-sm leading-relaxed">Lokal und regional besser gefunden werden – mit Strategie, Analyse und umsetzbaren Massnahmen.</p>
-</div>
+<h3 class="font-headline text-lg font-bold mb-2 group-hover:text-primary transition-colors">SEO & GEO-Optimierung</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Lokal und regional besser gefunden werden mit einer klaren Strategie und konkreten Massnahmen.</p>
+<span class="text-primary text-xs font-label mt-3 flex items-center gap-1">Mehr erfahren →</span>
+</a>
 <div class="bg-surface-container-highest rounded-xl p-6 border border-outline-variant/20 hover:bg-surface-variant transition-colors duration-300">
 <span class="material-symbols-outlined text-primary text-3xl mb-4 block">trending_up</span>
 <h3 class="font-headline text-lg font-bold mb-2">Conversion-Optimierung</h3>
-<p class="text-on-surface-variant text-sm leading-relaxed">Mehr Käufer aus bestehendem Traffic – gezielt und messbar.</p>
+<p class="text-on-surface-variant text-sm leading-relaxed">Mehr Käufer aus dem gleichen Traffic durch gezielte Optimierungen.</p>
 </div>
 <div class="bg-surface-container-highest rounded-xl p-6 border border-outline-variant/20 hover:bg-surface-variant transition-colors duration-300">
 <span class="material-symbols-outlined text-primary text-3xl mb-4 block">palette</span>
@@ -409,12 +417,12 @@ ALLE LEISTUNGEN <span class="material-symbols-outlined group-hover:ml-2 transiti
 <div class="bg-surface-container-highest rounded-xl p-6 border border-outline-variant/20 hover:bg-surface-variant transition-colors duration-300">
 <span class="material-symbols-outlined text-primary text-3xl mb-4 block">auto_awesome</span>
 <h3 class="font-headline text-lg font-bold mb-2">AI-Tools & Automationen</h3>
-<p class="text-on-surface-variant text-sm leading-relaxed">Zeit sparen mit den richtigen Tools – praxisnah und direkt anwendbar.</p>
+<p class="text-on-surface-variant text-sm leading-relaxed">Zeit sparen mit den richtigen Tools. Praxisnah und direkt umsetzbar.</p>
 </div>
 <div class="bg-surface-container-highest rounded-xl p-6 border border-outline-variant/20 hover:bg-surface-variant transition-colors duration-300">
 <span class="material-symbols-outlined text-primary text-3xl mb-4 block">groups</span>
 <h3 class="font-headline text-lg font-bold mb-2">Social Media</h3>
-<p class="text-on-surface-variant text-sm leading-relaxed">Mit einem Partner-Experten: Instagram, LinkedIn & Co. professionell bespielt.</p>
+<p class="text-on-surface-variant text-sm leading-relaxed">Mit einem Partner-Experten professionell auf Instagram und LinkedIn.</p>
 </div>
 </div>
 </div>
@@ -423,7 +431,7 @@ ALLE LEISTUNGEN <span class="material-symbols-outlined group-hover:ml-2 transiti
 <section class="py-24 relative overflow-hidden">
 <div class="max-w-5xl mx-auto px-8 text-center relative z-10">
 <h2 class="text-5xl md:text-6xl font-extrabold font-headline tracking-tighter mb-8">Bereit, Deinen Shop auf das nächste Level zu <span class="text-primary italic">heben?</span></h2>
-<p class="text-xl text-on-surface-variant mb-12 max-w-2xl mx-auto leading-relaxed">Lass uns in einem kostenlosen Erstgespräch herausfinden, wo Dein grösster Hebel liegt – und wie ich Dir helfen kann, nachhaltiges Wachstum für Deinen Schweizer Online-Shop zu erzielen.</p>
+<p class="text-xl text-on-surface-variant mb-12 max-w-2xl mx-auto leading-relaxed">Lass uns gemeinsam herausfinden wo der grösste Hebel in Deinem Shop liegt und wie ich Dir helfen kann dauerhaft zu wachsen.</p>
 <div class="flex flex-col md:flex-row justify-center items-center gap-6">
 <a href="kontakt.html" class="kinetic-gradient text-on-surface font-bold px-12 py-5 rounded-full text-lg transform hover:scale-105 active:scale-95 transition-all shadow-2xl inline-block">Jetzt kostenlos beraten lassen</a>
 
