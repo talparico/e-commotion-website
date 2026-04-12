@@ -6,8 +6,8 @@
 <script src="https://cdn.tailwindcss.com/3.4.1"></script>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Manrope:wght@400;500;700&amp;family=Inter:wght@400;500&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 
-<title>Kontakt | e-commotion.ch – Kostenlos beraten lassen</title>
-<meta name="description" content="Nimm Kontakt mit Rico Thalparpan auf – E-Commerce Spezialist aus Zürich. Kostenloses Erstgespräch buchen und Deinen Online-Shop gemeinsam voranbringen."/>
+<title>Kontakt – Kostenlose Beratung Schweiz | e-commotion.ch</title>
+<meta name="description" content="Schreib mich an – kostenlos und unverbindlich. Rico Thalparpan berät Dich zu SEO, GEO und Deinem Onlineshop. Antwort innerhalb von 24 Stunden. e-commotion.ch."/>
 <meta name="keywords" content="E-Commerce Agentur Kontakt Zürich, Shopify Beratung Schweiz, Erstgespräch E-Commerce, Online Shop Beratung DACH"/>
 <meta name="robots" content="index, follow"/>
 <meta name="author" content="e-commotion.ch"/>
@@ -15,8 +15,8 @@
 <link rel="alternate" hreflang="de-ch" href="https://www.e-commotion.ch/kontakt"/>
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://www.e-commotion.ch/kontakt"/>
-<meta property="og:title" content="Kontakt | e-commotion.ch – E-Commerce Agentur Zürich"/>
-<meta property="og:description" content="Schreib uns an oder buch direkt ein kostenloses Erstgespräch. Wir melden uns innerhalb von 24 Stunden."/>
+<meta property="og:title" content="Kontakt – Kostenlose Beratung Schweiz | e-commotion.ch"/>
+<meta property="og:description" content="Schreib mich an – kostenlos und unverbindlich. Rico Thalparpan berät Dich zu SEO, GEO und Deinem Onlineshop. Antwort innerhalb von 24 Stunden. e-commotion.ch."/>
 <meta property="og:locale" content="de_CH"/>
 <meta property="og:site_name" content="e-commotion.ch"/>
 
@@ -124,11 +124,16 @@
 <a href="index.html" class="text-xl font-bold tracking-tighter text-[#fafdfe] font-headline">e-commotion.ch</a>
 <div class="hidden md:flex items-center space-x-8 font-headline tracking-tight">
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors duration-300" href="index.html">Home</a>
-<div class="relative group/nav">
-<a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors duration-300 flex items-center gap-1" href="leistungen.html">Leistungen <span class="material-symbols-outlined text-sm" style="font-size:16px">expand_more</span></a>
-<div class="absolute top-full left-0 mt-2 w-56 bg-[#0b0f10] border border-outline-variant/30 rounded-xl p-2 hidden group-hover/nav:block shadow-xl z-50">
-<a href="leistungen.html" class="block px-4 py-2.5 text-sm text-[#fafdfe] opacity-70 hover:text-[#cf96ff] hover:opacity-100 rounded-lg transition-colors">Alle Leistungen</a>
-<a href="seo-geo.html" class="block px-4 py-2.5 text-sm text-[#fafdfe] opacity-70 hover:text-[#cf96ff] hover:opacity-100 rounded-lg transition-colors flex items-center gap-2"><span class="material-symbols-outlined text-primary" style="font-size:14px">search</span>SEO & GEO-Optimierung</a>
+<div class="relative" id="nav-dropdown-wrapper">
+<button class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors duration-300 flex items-center gap-1 font-headline tracking-tight" onclick="toggleDropdown()" id="nav-dropdown-btn">Leistungen <span class="material-symbols-outlined" style="font-size:16px">expand_more</span></button>
+<div id="nav-dropdown" class="absolute top-full left-0 mt-2 w-64 bg-[#0b0f10] border border-outline-variant/30 rounded-xl p-2 shadow-xl z-50 hidden">
+<a href="leistungen.html" class="block px-4 py-2.5 text-sm text-[#cf96ff] font-bold rounded-lg transition-colors">Alle Leistungen</a>
+<a href="seo-geo.html" class="block px-4 py-2.5 text-sm text-[#fafdfe] opacity-70 hover:text-[#cf96ff] hover:opacity-100 rounded-lg transition-colors">SEO & GEO-Optimierung</a>
+<a href="cro.html" class="block px-4 py-2.5 text-sm text-[#fafdfe] opacity-70 hover:text-[#cf96ff] hover:opacity-100 rounded-lg transition-colors">Conversion-Optimierung</a>
+<a href="ux-ui.html" class="block px-4 py-2.5 text-sm text-[#fafdfe] opacity-70 hover:text-[#cf96ff] hover:opacity-100 rounded-lg transition-colors">UX/UI Design</a>
+<a href="kundenbindung.html" class="block px-4 py-2.5 text-sm text-[#fafdfe] opacity-70 hover:text-[#cf96ff] hover:opacity-100 rounded-lg transition-colors">Kundenbindung & Retention</a>
+<a href="ai-tools.html" class="block px-4 py-2.5 text-sm text-[#fafdfe] opacity-70 hover:text-[#cf96ff] hover:opacity-100 rounded-lg transition-colors">AI-Tools & Automationen</a>
+<a href="social-media.html" class="block px-4 py-2.5 text-sm text-[#fafdfe] opacity-70 hover:text-[#cf96ff] hover:opacity-100 rounded-lg transition-colors">Social Media</a>
 </div>
 </div>
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors duration-300" href="projekte.html">Projekte</a>
@@ -148,6 +153,11 @@
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10" href="index.html">Home</a>
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10" href="leistungen.html">Leistungen</a>
 <a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10 pl-4 text-sm flex items-center gap-2" href="seo-geo.html"><span class="text-primary">↳</span> SEO & GEO-Optimierung</a>
+<a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10 pl-4 text-sm flex items-center gap-2" href="cro.html"><span class="text-primary">↳</span> Conversion-Optimierung</a>
+<a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10 pl-4 text-sm flex items-center gap-2" href="ux-ui.html"><span class="text-primary">↳</span> UX/UI Design</a>
+<a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10 pl-4 text-sm flex items-center gap-2" href="kundenbindung.html"><span class="text-primary">↳</span> Kundenbindung & Retention</a>
+<a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10 pl-4 text-sm flex items-center gap-2" href="ai-tools.html"><span class="text-primary">↳</span> AI-Tools & Automationen</a>
+<a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10 pl-4 text-sm flex items-center gap-2" href="social-media.html"><span class="text-primary">↳</span> Social Media</a>
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10" href="projekte.html">Projekte</a>
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10" href="ueber.html">Über e-commotion</a>
 <a class="text-[#cf96ff] font-bold py-2 border-b border-outline-variant/10" href="kontakt.html">Kontakt</a>
@@ -157,16 +167,22 @@
 <script>
 function toggleMenu() {
   const menu = document.getElementById('mobile-menu');
-  const b1 = document.getElementById('bar1');
-  const b2 = document.getElementById('bar2');
-  const b3 = document.getElementById('bar3');
+  const b1 = document.getElementById('bar1'), b2 = document.getElementById('bar2'), b3 = document.getElementById('bar3');
   menu.classList.toggle('hidden');
-  b1.classList.toggle('rotate-45');
-  b1.classList.toggle('translate-y-2');
-  b3.classList.toggle('-rotate-45');
-  b3.classList.toggle('-translate-y-2');
+  b1.classList.toggle('rotate-45'); b1.classList.toggle('translate-y-2');
+  b3.classList.toggle('-rotate-45'); b3.classList.toggle('-translate-y-2');
   b2.classList.toggle('opacity-0');
 }
+function toggleDropdown() {
+  const dd = document.getElementById('nav-dropdown');
+  dd.classList.toggle('hidden');
+}
+document.addEventListener('click', function(e) {
+  const wrapper = document.getElementById('nav-dropdown-wrapper');
+  if (wrapper && !wrapper.contains(e.target)) {
+    document.getElementById('nav-dropdown').classList.add('hidden');
+  }
+});
 </script>
 <main class="pt-32 pb-24">
 <div class="max-w-7xl mx-auto px-8">
@@ -410,6 +426,7 @@ function shareWebsite() {
 <a class="text-[#fafdfe] opacity-50 hover:text-[#cf96ff] hover:opacity-100 transition-opacity" href="https://www.instagram.com/e_commotion_ch" target="_blank" rel="noopener">Instagram</a>
 </div>
 </div>
+<p class="text-[10px] text-surface-container-low opacity-0 select-none" aria-hidden="true">Zuletzt aktualisiert: April 2026 · e-commotion.ch · Zürich, Schweiz</p>
 </footer>
 <!-- Cookie Banner -->
 <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 z-[200] md:bottom-6 md:left-6 md:right-auto md:max-w-md bg-[#0b0f10]/95 backdrop-blur-xl border-t border-outline-variant/30 md:border md:rounded-xl p-6 shadow-2xl" style="display:none;">

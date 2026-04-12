@@ -6,8 +6,8 @@
 <script src="https://cdn.tailwindcss.com/3.4.1"></script>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Manrope:wght@400;500;700&family=Inter:wght@400;500&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 
-<title>SEO & GEO Optimierung Schweiz | e-commotion.ch – Mehr Sichtbarkeit für Deinen Onlineshop</title>
-<meta name="description" content="SEO & GEO Optimierung für Onlineshops in der Schweiz. Rico Thalparpan – E-Commerce Spezialist aus Zürich. Mehr organischer Traffic, bessere Google Rankings, lokale Sichtbarkeit. Jetzt kostenlos beraten lassen."/>
+<title>SEO & GEO Optimierung Schweiz – Onlineshop | e-commotion.ch</title>
+<meta name="description" content="SEO und GEO-Optimierung für Schweizer Onlineshops. Mehr organischer Traffic, bessere Google Rankings und lokale Sichtbarkeit. Kostenlose Beratung anfragen."/>
 <meta name="keywords" content="SEO Optimierung Schweiz, GEO Optimierung, SEO Agentur Zürich, Onlineshop SEO, lokale SEO Schweiz, GEO Targeting, E-Commerce SEO, SEO Freelancer Schweiz, Google Ranking verbessern, organischer Traffic, GEO-SEO Strategie, SEO Beratung Schweiz, Onlineshop sichtbar machen, technische SEO, On-Page SEO, Local SEO Schweiz"/>
 <meta name="robots" content="index, follow"/>
 <meta name="author" content="e-commotion.ch"/>
@@ -15,8 +15,8 @@
 <link rel="alternate" hreflang="de-ch" href="https://www.e-commotion.ch/seo-geo"/>
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://www.e-commotion.ch/seo-geo"/>
-<meta property="og:title" content="SEO & GEO Optimierung Schweiz | e-commotion.ch"/>
-<meta property="og:description" content="Mehr organischer Traffic & lokale Sichtbarkeit für Deinen Onlineshop. SEO & GEO Spezialist aus Zürich – Rico Thalparpan, e-commotion.ch"/>
+<meta property="og:title" content="SEO & GEO Optimierung Schweiz – Onlineshop | e-commotion.ch"/>
+<meta property="og:description" content="SEO und GEO-Optimierung für Schweizer Onlineshops. Mehr organischer Traffic, bessere Google Rankings und lokale Sichtbarkeit. Kostenlose Beratung anfragen."/>
 <meta property="og:locale" content="de_CH"/>
 <meta property="og:site_name" content="e-commotion.ch"/>
 <script type="application/ld+json">
@@ -79,11 +79,16 @@
 <a href="index.html" class="text-xl font-bold tracking-tighter text-[#fafdfe] font-headline">e-commotion.ch</a>
 <div class="hidden md:flex items-center space-x-8 font-headline tracking-tight">
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors duration-300" href="index.html">Home</a>
-<div class="relative group/nav">
-<a class="text-[#cf96ff] font-bold border-b-2 border-[#cf96ff] pb-1 transition-colors duration-300 flex items-center gap-1" href="leistungen.html">Leistungen <span class="material-symbols-outlined text-sm" style="font-size:16px">expand_more</span></a>
-<div class="absolute top-full left-0 mt-2 w-56 bg-[#0b0f10] border border-outline-variant/30 rounded-xl p-2 hidden group-hover/nav:block shadow-xl z-50">
+<div class="relative" id="nav-dropdown-wrapper">
+<button class="text-[#cf96ff] font-bold transition-colors duration-300 flex items-center gap-1 font-headline tracking-tight" onclick="toggleDropdown()" id="nav-dropdown-btn">Leistungen <span class="material-symbols-outlined" style="font-size:16px">expand_more</span></button>
+<div id="nav-dropdown" class="absolute top-full left-0 mt-2 w-64 bg-[#0b0f10] border border-outline-variant/30 rounded-xl p-2 shadow-xl z-50 hidden">
 <a href="leistungen.html" class="block px-4 py-2.5 text-sm text-[#fafdfe] opacity-70 hover:text-[#cf96ff] hover:opacity-100 rounded-lg transition-colors">Alle Leistungen</a>
-<a href="seo-geo.html" class="block px-4 py-2.5 text-sm text-[#fafdfe] opacity-70 hover:text-[#cf96ff] hover:opacity-100 rounded-lg transition-colors flex items-center gap-2"><span class="material-symbols-outlined text-primary" style="font-size:14px">search</span>SEO & GEO-Optimierung</a>
+<a href="seo-geo.html" class="block px-4 py-2.5 text-sm text-[#cf96ff] font-bold rounded-lg transition-colors">SEO & GEO-Optimierung</a>
+<a href="cro.html" class="block px-4 py-2.5 text-sm text-[#fafdfe] opacity-70 hover:text-[#cf96ff] hover:opacity-100 rounded-lg transition-colors">Conversion-Optimierung</a>
+<a href="ux-ui.html" class="block px-4 py-2.5 text-sm text-[#fafdfe] opacity-70 hover:text-[#cf96ff] hover:opacity-100 rounded-lg transition-colors">UX/UI Design</a>
+<a href="kundenbindung.html" class="block px-4 py-2.5 text-sm text-[#fafdfe] opacity-70 hover:text-[#cf96ff] hover:opacity-100 rounded-lg transition-colors">Kundenbindung & Retention</a>
+<a href="ai-tools.html" class="block px-4 py-2.5 text-sm text-[#fafdfe] opacity-70 hover:text-[#cf96ff] hover:opacity-100 rounded-lg transition-colors">AI-Tools & Automationen</a>
+<a href="social-media.html" class="block px-4 py-2.5 text-sm text-[#fafdfe] opacity-70 hover:text-[#cf96ff] hover:opacity-100 rounded-lg transition-colors">Social Media</a>
 </div>
 </div>
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors duration-300" href="projekte.html">Projekte</a>
@@ -102,7 +107,12 @@
 <div id="mobile-menu" class="hidden md:hidden bg-[#0b0f10] border-t border-outline-variant/10 px-6 py-4 flex flex-col gap-1 font-headline">
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10" href="index.html">Home</a>
 <a class="text-[#cf96ff] font-bold py-2 border-b border-outline-variant/10" href="leistungen.html">Leistungen</a>
-<a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10 pl-4 text-sm flex items-center gap-2" href="seo-geo.html"><span class="text-primary">↳</span> SEO & GEO-Optimierung</a>
+<a class="text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10 pl-4 text-sm flex items-center gap-2" href="seo-geo.html"><span class="text-primary">↳</span> SEO & GEO-Optimierung</a>
+<a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10 pl-4 text-sm flex items-center gap-2" href="cro.html"><span class="text-primary">↳</span> Conversion-Optimierung</a>
+<a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10 pl-4 text-sm flex items-center gap-2" href="ux-ui.html"><span class="text-primary">↳</span> UX/UI Design</a>
+<a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10 pl-4 text-sm flex items-center gap-2" href="kundenbindung.html"><span class="text-primary">↳</span> Kundenbindung & Retention</a>
+<a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10 pl-4 text-sm flex items-center gap-2" href="ai-tools.html"><span class="text-primary">↳</span> AI-Tools & Automationen</a>
+<a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10 pl-4 text-sm flex items-center gap-2" href="social-media.html"><span class="text-primary">↳</span> Social Media</a>
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10" href="projekte.html">Projekte</a>
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10" href="ueber.html">Über e-commotion</a>
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10" href="kontakt.html">Kontakt</a>
@@ -118,6 +128,16 @@ function toggleMenu() {
   b3.classList.toggle('-rotate-45'); b3.classList.toggle('-translate-y-2');
   b2.classList.toggle('opacity-0');
 }
+function toggleDropdown() {
+  const dd = document.getElementById('nav-dropdown');
+  dd.classList.toggle('hidden');
+}
+document.addEventListener('click', function(e) {
+  const wrapper = document.getElementById('nav-dropdown-wrapper');
+  if (wrapper && !wrapper.contains(e.target)) {
+    document.getElementById('nav-dropdown').classList.add('hidden');
+  }
+});
 </script>
 
 <main class="pt-32 pb-24">
@@ -332,56 +352,40 @@ function toggleMenu() {
 <!-- Sticky Mobile CTA -->
 <div class="fixed bottom-6 left-0 right-0 flex justify-center z-40 md:hidden px-6">
 <a href="kontakt.html" class="kinetic-gradient text-on-surface font-bold px-8 py-4 rounded-full text-sm shadow-[0_8px_30px_rgba(141,0,230,0.4)] flex items-center gap-2 active:scale-95 transition-all duration-300">
-<span class="material-symbols-outlined" style="font-size:18px;">chat</span>
-Kostenlos beraten lassen
-</a>
-</div>
-
+<span class="material-symbols-outlined" style="font-size:18px;">chat</span>Kostenlos beraten lassen</a></div>
 <!-- Impressum Modal -->
 <div id="impressum-modal" class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/60 backdrop-blur-sm">
 <div class="bg-surface-container-high rounded-xl p-8 max-w-md w-full mx-4 relative ghost-border">
-<button onclick="document.getElementById('impressum-modal').classList.add('hidden');document.getElementById('impressum-modal').classList.remove('flex');" class="absolute top-4 right-4 text-on-surface-variant hover:text-primary transition-colors">
-<span class="material-symbols-outlined">close</span>
-</button>
+<button onclick="document.getElementById('impressum-modal').classList.add('hidden');document.getElementById('impressum-modal').classList.remove('flex');" class="absolute top-4 right-4 text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined">close</span></button>
 <h2 class="font-headline text-2xl font-bold mb-6">Impressum</h2>
-<div class="space-y-1 text-on-surface-variant font-body text-sm leading-relaxed">
-<p class="text-on-surface font-semibold">Rico Thalparpan</p>
-<p>e-commotion</p><p>Metzgerweg 12</p><p>8906 Bonstetten</p>
+<div class="space-y-1 text-on-surface-variant font-body text-sm">
+<p class="text-on-surface font-semibold">Rico Thalparpan</p><p>e-commotion</p><p>Metzgerweg 12</p><p>8906 Bonstetten</p>
 <p class="pt-2"><a href="mailto:service@e-commotion.ch" class="text-primary hover:underline">service@e-commotion.ch</a></p>
-</div>
-</div>
-</div>
-<!-- Footer -->
+</div></div></div>
 <footer class="bg-[#0b0f10] w-full py-10 px-6 pb-24 md:pb-10 border-t border-outline-variant/10">
 <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
 <div class="flex flex-col items-center md:items-start gap-1">
 <a href="index.html" class="text-lg font-black text-[#fafdfe] font-headline">e-commotion.ch</a>
-<p class="text-[#fafdfe] opacity-40 font-['Manrope'] text-xs">© 2026 e-commotion.ch · Alle Rechte vorbehalten · Schweiz</p>
+<p class="text-[#fafdfe] opacity-40 text-xs">© 2026 e-commotion.ch · Alle Rechte vorbehalten · Schweiz</p>
 </div>
-<div class="flex flex-wrap justify-center gap-6 font-['Manrope'] text-sm">
+<div class="flex flex-wrap justify-center gap-6 text-sm">
 <a class="text-[#fafdfe] opacity-50 hover:text-[#cf96ff] hover:opacity-100 transition-opacity" href="datenschutz.html">Datenschutz</a>
-<button onclick="document.getElementById('impressum-modal').classList.remove('hidden');document.getElementById('impressum-modal').classList.add('flex');" class="text-[#fafdfe] opacity-50 hover:text-[#cf96ff] hover:opacity-100 transition-opacity cursor-pointer bg-transparent border-0 font-['Manrope'] text-sm p-0">Impressum</button>
+<button onclick="document.getElementById('impressum-modal').classList.remove('hidden');document.getElementById('impressum-modal').classList.add('flex');" class="text-[#fafdfe] opacity-50 hover:text-[#cf96ff] hover:opacity-100 transition-opacity cursor-pointer bg-transparent border-0 text-sm p-0">Impressum</button>
 <a class="text-[#fafdfe] opacity-50 hover:text-[#cf96ff] hover:opacity-100 transition-opacity" href="https://www.linkedin.com/company/e-commotion" target="_blank" rel="noopener">LinkedIn</a>
 <a class="text-[#fafdfe] opacity-50 hover:text-[#cf96ff] hover:opacity-100 transition-opacity" href="https://www.instagram.com/e_commotion_ch" target="_blank" rel="noopener">Instagram</a>
-</div>
-</div>
+</div></div>
+<p class="text-[10px] text-surface-container-low opacity-0 select-none" aria-hidden="true">Zuletzt aktualisiert: April 2026 · e-commotion.ch · Zürich, Schweiz</p>
 </footer>
-
-<!-- Cookie Banner -->
 <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 z-[200] md:bottom-6 md:left-6 md:right-auto md:max-w-md bg-[#0b0f10]/95 backdrop-blur-xl border-t border-outline-variant/30 md:border md:rounded-xl p-6 shadow-2xl" style="display:none;">
-<p class="text-sm text-on-surface-variant leading-relaxed mb-4">Diese Webseite verwendet Cookies. Mit der Nutzung stimmst Du unserer <a href="datenschutz.html" class="text-primary underline hover:opacity-80">Datenschutzrichtlinie</a> zu.</p>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-4">Diese Webseite verwendet Cookies. Mit der Nutzung stimmst Du unserer <a href="datenschutz.html" class="text-primary underline">Datenschutzrichtlinie</a> zu.</p>
 <div class="flex flex-col sm:flex-row gap-3">
-<button onclick="acceptCookies()" class="kinetic-gradient text-on-surface font-bold px-6 py-2.5 rounded-full text-sm flex-1 active:scale-95 transition-all">Alle akzeptieren</button>
-<button onclick="declineCookies()" class="bg-surface-container-high text-on-surface-variant font-bold px-6 py-2.5 rounded-full text-sm flex-1 hover:bg-surface-container-highest transition-all">Nur notwendige</button>
-</div>
-</div>
+<button onclick="acceptCookies()" class="kinetic-gradient text-on-surface font-bold px-6 py-2.5 rounded-full text-sm flex-1">Alle akzeptieren</button>
+<button onclick="declineCookies()" class="bg-surface-container-high text-on-surface-variant font-bold px-6 py-2.5 rounded-full text-sm flex-1">Nur notwendige</button>
+</div></div>
 <script>
-function showCookieBanner() {
-  if (!localStorage.getItem('cookie-consent')) { setTimeout(function() { document.getElementById('cookie-banner').style.display = 'block'; }, 1500); }
-}
-function acceptCookies() { localStorage.setItem('cookie-consent', 'accepted'); document.getElementById('cookie-banner').style.display = 'none'; }
-function declineCookies() { localStorage.setItem('cookie-consent', 'declined'); document.getElementById('cookie-banner').style.display = 'none'; }
-window.addEventListener('DOMContentLoaded', showCookieBanner);
+function showCookieBanner(){if(!localStorage.getItem('cookie-consent')){setTimeout(function(){document.getElementById('cookie-banner').style.display='block';},1500);}}
+function acceptCookies(){localStorage.setItem('cookie-consent','accepted');document.getElementById('cookie-banner').style.display='none';}
+function declineCookies(){localStorage.setItem('cookie-consent','declined');document.getElementById('cookie-banner').style.display='none';}
+window.addEventListener('DOMContentLoaded',showCookieBanner);
 </script>
-
 </body></html>
