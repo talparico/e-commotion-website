@@ -46,6 +46,7 @@ tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-surface":"#fafdfe",
     pointer-events: none;
     background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuBSVXe1ie2pJcwe4f86quN42jFCsSZvSrSGx4VMrnaE25uvLaRcAMO24-XHQBNeUE6Wckt_ZHdMomCbvz2KtNea7gmWq-ykPmEkHG3OPr-qGSO81DixF81ZO-h7-4MoxmfXw7pyUZOz3hQeCO7cOdLHXWQTUqcwGGL7k3HRQURK_cVoPgtGQ9B48XKajB7739efzQT3veNC7lNDHlQ7BhcnLN6R7HTLQRKlu-X5Uy4rG0koWZjisn-Jcvj1sFZQ01jhvxdKqG90I46W)
     }</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Wie läuft eine Zusammenarbeit mit e-commotion ab?","acceptedAnswer":{"@type":"Answer","text":"Wir starten mit einem kostenlosen Erstgespräch. Ich lerne Deinen Shop und Deine Ziele kennen und mache Dir ein konkretes Angebot. Danach arbeiten wir direkt zusammen – ohne Umwege."}},{"@type":"Question","name":"Wie schnell antwortet Rico auf Anfragen?","acceptedAnswer":{"@type":"Answer","text":"Ich antworte innerhalb von 24 Stunden auf alle Anfragen – in der Regel noch am gleichen Tag."}},{"@type":"Question","name":"Für wen eignet sich e-commotion?","acceptedAnswer":{"@type":"Answer","text":"Für Schweizer KMU und Onlineshops die wachsen wollen. Egal ob frisch gestartet oder bereits etabliert – ich helfe dort wo der grösste Hebel liegt."}},{"@type":"Question","name":"Was kostet eine Beratung?","acceptedAnswer":{"@type":"Answer","text":"Das Erstgespräch ist kostenlos und unverbindlich. Danach erstelle ich ein individuelles Angebot das zu Deinem Projekt und Budget passt."}}]}</script>
 </head>
 <body class="bg-surface text-on-surface font-body selection:bg-primary selection:text-on-primary overflow-x-hidden">
 <!-- Nav -->
@@ -64,6 +65,7 @@ tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-surface":"#fafdfe",
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors duration-300" href="projekte.html">Projekte</a>
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors duration-300" href="ueber.html">Über e-commotion</a>
 <a class="text-[#cf96ff] font-bold border-b-2 border-[#cf96ff] pb-1 transition-colors duration-300" href="kontakt.html">Kontakt</a>
+<a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors duration-300" href="faq.html">FAQ</a>
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors duration-300" href="blog.html">Blog</a></div>
 <div class="flex items-center gap-3">
 <a href="kontakt.html" class="hidden md:inline-block kinetic-gradient text-on-surface font-bold px-5 py-2 rounded-full text-sm active:scale-95 transition-all duration-300">Kostenlos beraten lassen</a>
@@ -86,8 +88,19 @@ tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-surface":"#fafdfe",
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10" href="projekte.html">Projekte</a>
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10" href="ueber.html">Über e-commotion</a>
 <a class="text-[#cf96ff] font-bold py-2 border-b border-outline-variant/10" href="kontakt.html">Kontakt</a>
+<a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10" href="faq.html">FAQ</a>
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10" href="blog.html">Blog</a><a href="kontakt.html" class="kinetic-gradient text-on-surface font-bold px-6 py-3 rounded-full text-center mt-4">Kostenlos beraten lassen</a></div>
 </nav>
+<script>
+function toggleMenu(){const menu=document.getElementById('mobile-menu');const b1=document.getElementById('bar1'),b2=document.getElementById('bar2'),b3=document.getElementById('bar3');menu.classList.toggle('hidden');b1.classList.toggle('rotate-45');b1.classList.toggle('translate-y-2');b3.classList.toggle('-rotate-45');b3.classList.toggle('-translate-y-2');b2.classList.toggle('opacity-0');}
+function toggleDropdown(){const dd=document.getElementById('nav-dropdown');dd.classList.toggle('hidden');}
+document.addEventListener('click',function(e){const wrapper=document.getElementById('nav-dropdown-wrapper');if(wrapper&&!wrapper.contains(e.target)){document.getElementById('nav-dropdown').classList.add('hidden');}});
+</script>
+<script>
+function toggleMenu(){const menu=document.getElementById('mobile-menu');const b1=document.getElementById('bar1'),b2=document.getElementById('bar2'),b3=document.getElementById('bar3');menu.classList.toggle('hidden');b1.classList.toggle('rotate-45');b1.classList.toggle('translate-y-2');b3.classList.toggle('-rotate-45');b3.classList.toggle('-translate-y-2');b2.classList.toggle('opacity-0');}
+function toggleDropdown(){const dd=document.getElementById('nav-dropdown');dd.classList.toggle('hidden');}
+document.addEventListener('click',function(e){const wrapper=document.getElementById('nav-dropdown-wrapper');if(wrapper&&!wrapper.contains(e.target)){document.getElementById('nav-dropdown').classList.add('hidden');}});
+</script>
 <script>
 function toggleMenu(){const menu=document.getElementById('mobile-menu');const b1=document.getElementById('bar1'),b2=document.getElementById('bar2'),b3=document.getElementById('bar3');menu.classList.toggle('hidden');b1.classList.toggle('rotate-45');b1.classList.toggle('translate-y-2');b3.classList.toggle('-rotate-45');b3.classList.toggle('-translate-y-2');b2.classList.toggle('opacity-0');}
 function toggleDropdown(){const dd=document.getElementById('nav-dropdown');dd.classList.toggle('hidden');}
@@ -341,7 +354,10 @@ function shareWebsite() {
 </div><!-- end max-w-7xl -->
 
 <section class="max-w-7xl mx-auto px-8 py-16">
-<h2 class="font-headline text-2xl font-extrabold tracking-tight mb-8">Häufige Fragen</h2>
+<div class="flex items-center justify-between mb-8 flex-wrap gap-4">
+<h2 class="font-headline text-2xl font-extrabold tracking-tight">Häufige Fragen zur Zusammenarbeit</h2>
+<a href="faq.html" class="text-primary font-label text-sm font-bold flex items-center gap-1 hover:gap-2 transition-all">Alle FAQs ansehen <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 <div class="bg-surface-container rounded-xl p-6 border border-outline-variant/20">
 <h3 class="font-headline font-bold mb-2">Wie läuft eine Zusammenarbeit ab?</h3>
@@ -368,7 +384,7 @@ function shareWebsite() {
 <button onclick="document.getElementById('impressum-modal').classList.add('hidden');document.getElementById('impressum-modal').classList.remove('flex');" class="absolute top-4 right-4 text-on-surface-variant hover:text-primary transition-colors">
 <span class="material-symbols-outlined">close</span>
 </button>
-<h2 class="font-headline text-2xl font-bold mb-6">Impressum</h2>
+<p class="font-headline text-2xl font-bold mb-6">Impressum</p>
 <div class="space-y-1 text-on-surface-variant font-body text-sm leading-relaxed">
 <p class="text-on-surface font-semibold">Rico Thalparpan</p>
 <p>e-commotion</p>
