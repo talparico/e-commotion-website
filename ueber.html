@@ -72,24 +72,18 @@ tailwind.config = {
 <nav class="fixed top-0 w-full z-50 bg-[#0b0f10]/80 backdrop-blur-xl border-b border-outline-variant/10">
 <div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
 <a href="index.html" class="text-xl font-bold tracking-tighter text-[#fafdfe] font-headline">e-commotion.ch</a>
-<div class="hidden md:flex items-center space-x-8 font-headline tracking-tight">
-<a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors duration-300" href="index.html">Home</a>
-<div class="relative" id="nav-dropdown-wrapper">
-<button class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors duration-300 flex items-center gap-1 font-headline tracking-tight" onclick="toggleDropdown()" id="nav-dropdown-btn">Leistungen <span class="material-symbols-outlined" style="font-size:16px">expand_more</span></button>
-<div id="nav-dropdown" class="absolute top-full left-0 mt-2 w-64 bg-[#0b0f10] border border-outline-variant/30 rounded-xl p-2 shadow-xl z-50 hidden">
-<a href="leistungen.html" class="block px-4 py-2.5 text-sm text-[#cf96ff] font-bold rounded-lg transition-colors">Alle Leistungen</a>
-<a href="seo-geo.html" class="block px-4 py-2.5 text-sm text-[#fafdfe] opacity-70 hover:text-[#cf96ff] hover:opacity-100 rounded-lg transition-colors">SEO & GEO-Optimierung</a>
+<div class="hidden md:flex items-center space-x-8 font-headline tracking-tight"><a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors duration-300" href="index.html">Home</a>
+<div class="relative" id="nav-dropdown-wrapper"><button class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors duration-300 flex items-center gap-1 font-headline tracking-tight" onclick="toggleDropdown()" id="nav-dropdown-btn">Leistungen <span class="material-symbols-outlined" style="font-size:16px">expand_more</span></button><div id="nav-dropdown" class="absolute top-full left-0 mt-2 w-64 bg-[#0b0f10] border border-outline-variant/30 rounded-xl p-2 shadow-xl z-50 hidden"><a href="leistungen.html" class="block px-4 py-2.5 text-sm text-[#cf96ff] font-bold rounded-lg transition-colors">Alle Leistungen</a>
+<a href="seo.html" class="block px-4 py-2.5 text-sm text-[#fafdfe] opacity-70 hover:text-[#cf96ff] hover:opacity-100 rounded-lg transition-colors">SEO-Optimierung</a>
+<a href="geo.html" class="block px-4 py-2.5 text-sm text-[#fafdfe] opacity-70 hover:text-[#cf96ff] hover:opacity-100 rounded-lg transition-colors">GEO-Optimierung</a>
 <a href="cro.html" class="block px-4 py-2.5 text-sm text-[#fafdfe] opacity-70 hover:text-[#cf96ff] hover:opacity-100 rounded-lg transition-colors">Conversion-Optimierung</a>
 <a href="ux-ui.html" class="block px-4 py-2.5 text-sm text-[#fafdfe] opacity-70 hover:text-[#cf96ff] hover:opacity-100 rounded-lg transition-colors">UX/UI Design</a>
 <a href="kundenbindung.html" class="block px-4 py-2.5 text-sm text-[#fafdfe] opacity-70 hover:text-[#cf96ff] hover:opacity-100 rounded-lg transition-colors">Kundenbindung & Retention</a>
 <a href="ai-tools.html" class="block px-4 py-2.5 text-sm text-[#fafdfe] opacity-70 hover:text-[#cf96ff] hover:opacity-100 rounded-lg transition-colors">AI-Tools & Automationen</a>
-<a href="social-media.html" class="block px-4 py-2.5 text-sm text-[#fafdfe] opacity-70 hover:text-[#cf96ff] hover:opacity-100 rounded-lg transition-colors">Social Media</a>
-</div>
-</div>
+<a href="social-media.html" class="block px-4 py-2.5 text-sm text-[#fafdfe] opacity-70 hover:text-[#cf96ff] hover:opacity-100 rounded-lg transition-colors">Social Media</a></div></div>
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors duration-300" href="projekte.html">Projekte</a>
 <a class="text-[#cf96ff] font-bold border-b-2 border-[#cf96ff] pb-1 transition-colors duration-300" href="ueber.html">Über e-commotion</a>
-<a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors duration-300" href="kontakt.html">Kontakt</a>
-</div>
+<a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors duration-300" href="kontakt.html">Kontakt</a></div>
 <div class="flex items-center gap-3">
 <a href="kontakt.html" class="hidden md:inline-block kinetic-gradient text-on-surface font-bold px-5 py-2 rounded-full text-sm active:scale-95 transition-all duration-300">Kostenlos beraten lassen</a>
 <button id="menu-toggle" class="md:hidden flex flex-col gap-1.5 p-2" onclick="toggleMenu()" aria-label="Menü öffnen">
@@ -99,10 +93,10 @@ tailwind.config = {
 </button>
 </div>
 </div>
-<div id="mobile-menu" class="hidden md:hidden bg-[#0b0f10] border-t border-outline-variant/10 px-6 py-4 flex flex-col gap-1 font-headline">
-<a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10" href="index.html">Home</a>
+<div id="mobile-menu" class="hidden md:hidden bg-[#0b0f10] border-t border-outline-variant/10 px-6 py-4 flex flex-col gap-1 font-headline"><a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10" href="index.html">Home</a>
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10" href="leistungen.html">Leistungen</a>
-<a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10 pl-4 text-sm flex items-center gap-2" href="seo-geo.html"><span class="text-primary">↳</span> SEO & GEO-Optimierung</a>
+<a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10 pl-4 text-sm flex items-center gap-2" href="seo.html"><span class="text-primary">↳</span> SEO-Optimierung</a>
+<a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10 pl-4 text-sm flex items-center gap-2" href="geo.html"><span class="text-primary">↳</span> GEO-Optimierung</a>
 <a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10 pl-4 text-sm flex items-center gap-2" href="cro.html"><span class="text-primary">↳</span> Conversion-Optimierung</a>
 <a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10 pl-4 text-sm flex items-center gap-2" href="ux-ui.html"><span class="text-primary">↳</span> UX/UI Design</a>
 <a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10 pl-4 text-sm flex items-center gap-2" href="kundenbindung.html"><span class="text-primary">↳</span> Kundenbindung & Retention</a>
@@ -110,10 +104,13 @@ tailwind.config = {
 <a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10 pl-4 text-sm flex items-center gap-2" href="social-media.html"><span class="text-primary">↳</span> Social Media</a>
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10" href="projekte.html">Projekte</a>
 <a class="text-[#cf96ff] font-bold py-2 border-b border-outline-variant/10" href="ueber.html">Über e-commotion</a>
-<a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10" href="kontakt.html">Kontakt</a>
-<a href="kontakt.html" class="kinetic-gradient text-on-surface font-bold px-6 py-3 rounded-full text-center mt-4">Kostenlos beraten lassen</a>
-</div>
+<a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10" href="kontakt.html">Kontakt</a><a href="kontakt.html" class="kinetic-gradient text-on-surface font-bold px-6 py-3 rounded-full text-center mt-4">Kostenlos beraten lassen</a></div>
 </nav>
+<script>
+function toggleMenu(){const menu=document.getElementById('mobile-menu');const b1=document.getElementById('bar1'),b2=document.getElementById('bar2'),b3=document.getElementById('bar3');menu.classList.toggle('hidden');b1.classList.toggle('rotate-45');b1.classList.toggle('translate-y-2');b3.classList.toggle('-rotate-45');b3.classList.toggle('-translate-y-2');b2.classList.toggle('opacity-0');}
+function toggleDropdown(){const dd=document.getElementById('nav-dropdown');dd.classList.toggle('hidden');}
+document.addEventListener('click',function(e){const wrapper=document.getElementById('nav-dropdown-wrapper');if(wrapper&&!wrapper.contains(e.target)){document.getElementById('nav-dropdown').classList.add('hidden');}});
+</script>
 <script>
 function toggleMenu() {
   const menu = document.getElementById('mobile-menu');
