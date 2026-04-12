@@ -32,7 +32,7 @@ tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-surface":"#fafdfe",
 <div class="relative" id="nav-dropdown-wrapper"><button class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors duration-300 flex items-center gap-1 font-headline tracking-tight" onclick="toggleDropdown()" id="nav-dropdown-btn">Leistungen <span class="material-symbols-outlined" style="font-size:16px">expand_more</span></button><div id="nav-dropdown" class="absolute top-full left-0 mt-2 w-64 bg-[#0b0f10] border border-outline-variant/30 rounded-xl p-2 shadow-xl z-50 hidden"><a href="/leistungen/" class="block px-4 py-2.5 text-sm text-[#cf96ff] font-bold rounded-lg transition-colors">Alle Leistungen</a>
 <a href="/seo/" class="block px-4 py-2.5 text-sm text-[#fafdfe] opacity-70 hover:text-[#cf96ff] hover:opacity-100 rounded-lg transition-colors">SEO-Optimierung</a>
 <a href="/geo/" class="block px-4 py-2.5 text-sm text-[#fafdfe] opacity-70 hover:text-[#cf96ff] hover:opacity-100 rounded-lg transition-colors">GEO-Optimierung</a>
-<a href="/cro/" class="block px-4 py-2.5 text-sm text-[#fafdfe] opacity-70 hover:text-[#cf96ff] hover:opacity-100 rounded-lg transition-colors">Conversion-Optimierung</a>
+<a href="/conversion-rate-optimierung/" class="block px-4 py-2.5 text-sm text-[#fafdfe] opacity-70 hover:text-[#cf96ff] hover:opacity-100 rounded-lg transition-colors">Conversion-Optimierung</a>
 <a href="/ux-ui/" class="block px-4 py-2.5 text-sm text-[#fafdfe] opacity-70 hover:text-[#cf96ff] hover:opacity-100 rounded-lg transition-colors">UX/UI Design</a>
 <a href="/kundenbindung/" class="block px-4 py-2.5 text-sm text-[#fafdfe] opacity-70 hover:text-[#cf96ff] hover:opacity-100 rounded-lg transition-colors">Kundenbindung & Retention</a>
 <a href="/ai-tools/" class="block px-4 py-2.5 text-sm text-[#fafdfe] opacity-70 hover:text-[#cf96ff] hover:opacity-100 rounded-lg transition-colors">AI-Tools & Automationen</a>
@@ -55,7 +55,7 @@ tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-surface":"#fafdfe",
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10" href="/leistungen/">Leistungen</a>
 <a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10 pl-4 text-sm flex items-center gap-2" href="/seo/"><span class="text-primary">↳</span> SEO-Optimierung</a>
 <a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10 pl-4 text-sm flex items-center gap-2" href="/geo/"><span class="text-primary">↳</span> GEO-Optimierung</a>
-<a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10 pl-4 text-sm flex items-center gap-2" href="/cro/"><span class="text-primary">↳</span> Conversion-Optimierung</a>
+<a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10 pl-4 text-sm flex items-center gap-2" href="/conversion-rate-optimierung/"><span class="text-primary">↳</span> Conversion-Optimierung</a>
 <a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10 pl-4 text-sm flex items-center gap-2" href="/ux-ui/"><span class="text-primary">↳</span> UX/UI Design</a>
 <a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10 pl-4 text-sm flex items-center gap-2" href="/kundenbindung/"><span class="text-primary">↳</span> Kundenbindung & Retention</a>
 <a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10 pl-4 text-sm flex items-center gap-2" href="/ai-tools/"><span class="text-primary">↳</span> AI-Tools & Automationen</a>
@@ -95,7 +95,7 @@ document.addEventListener('click',function(e){const wrapper=document.getElementB
 <!-- FAQ Accordion -->
 <section class="max-w-4xl mx-auto px-8">
 <div class="mb-14" id="zusammenarbeit">
-<div class="flex items-center gap-3 mb-1"><span class="material-symbols-outlined text-primary">handshake</span><h2 class="font-headline text-2xl font-extrabold tracking-tight">Fragen und Antworten zur Zusammenarbeit mit e-commotion
+<div class="flex items-center gap-3 mb-1"><span class="material-symbols-outlined text-primary">handshake</span><h2 class="font-headline text-2xl font-extrabold tracking-tight">Fragen und Antworten zur Zusammenarbeit mit e-commotion.ch
 </h2></div>
 <p class="text-on-surface-variant text-sm mb-6 ml-9">Alle wichtigen Antworten rund um Zusammenarbeit für Schweizer Onlineshops.</p>
 <div class="space-y-3"><div class="border border-outline-variant/20 rounded-xl overflow-hidden">
@@ -132,7 +132,7 @@ document.addEventListener('click',function(e){const wrapper=document.getElementB
 </div>
 </div></div>
 </div><div class="mb-14" id="seo">
-<div class="flex items-center gap-3 mb-1"><span class="material-symbols-outlined text-primary">search</span><h2 class="font-headline text-2xl font-extrabold tracking-tight">Fragen und Antworten zur SEO-Optimierung – e-commotion.ch
+<div class="flex items-center gap-3 mb-1"><span class="material-symbols-outlined text-primary">search</span><h2 class="font-headline text-2xl font-extrabold tracking-tight">Fragen und Antworten zur SEO-Optimierung bei e-commotion.ch
 </h2></div>
 <p class="text-on-surface-variant text-sm mb-6 ml-9">Alle wichtigen Antworten rund um SEO für Schweizer Onlineshops.</p>
 <div class="space-y-3"><div class="border border-outline-variant/20 rounded-xl overflow-hidden">
@@ -161,7 +161,7 @@ document.addEventListener('click',function(e){const wrapper=document.getElementB
 </div>
 </div></div>
 </div><div class="mb-14" id="geo">
-<div class="flex items-center gap-3 mb-1"><span class="material-symbols-outlined text-primary">auto_awesome</span><h2 class="font-headline text-2xl font-extrabold tracking-tight">Fragen und Antworten zur GEO-Optimierung – e-commotion.ch
+<div class="flex items-center gap-3 mb-1"><span class="material-symbols-outlined text-primary">auto_awesome</span><h2 class="font-headline text-2xl font-extrabold tracking-tight">Fragen und Antworten zur GEO-Optimierung bei e-commotion.ch
 </h2></div>
 <p class="text-on-surface-variant text-sm mb-6 ml-9">Alle wichtigen Antworten rund um GEO für Schweizer Onlineshops.</p>
 <div class="space-y-3"><div class="border border-outline-variant/20 rounded-xl overflow-hidden">
@@ -190,7 +190,7 @@ document.addEventListener('click',function(e){const wrapper=document.getElementB
 </div>
 </div></div>
 </div><div class="mb-14" id="conversion">
-<div class="flex items-center gap-3 mb-1"><span class="material-symbols-outlined text-primary">trending_up</span><h2 class="font-headline text-2xl font-extrabold tracking-tight">Fragen und Antworten zur Conversion-Optimierung – e-commotion.ch
+<div class="flex items-center gap-3 mb-1"><span class="material-symbols-outlined text-primary">trending_up</span><h2 class="font-headline text-2xl font-extrabold tracking-tight">Fragen und Antworten zur Conversion-Optimierung bei e-commotion.ch
 </h2></div>
 <p class="text-on-surface-variant text-sm mb-6 ml-9">Alle wichtigen Antworten rund um Conversion für Schweizer Onlineshops.</p>
 <div class="space-y-3"><div class="border border-outline-variant/20 rounded-xl overflow-hidden">
