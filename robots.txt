@@ -1,4 +1,67 @@
+# Alle Standard-Crawler
 User-agent: *
+Allow: /
+
+# Google
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+# Google AI (SGE / AI Overviews)
+User-agent: Google-Extended
+Allow: /
+
+# OpenAI / ChatGPT
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# Anthropic / Claude
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Meta AI
+User-agent: FacebookBot
+Allow: /
+
+# Microsoft / Bing / Copilot
+User-agent: Bingbot
+Allow: /
+
+User-agent: msnbot
+Allow: /
+
+# Apple
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Common Crawl (Trainingsdaten für viele AI-Modelle)
+User-agent: CCBot
+Allow: /
+
+# Amazon Alexa
+User-agent: Amazonbot
+Allow: /
+
+# You.com
+User-agent: YouBot
 Allow: /
 
 Sitemap: https://www.e-commotion.ch/sitemap.xml
