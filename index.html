@@ -100,20 +100,29 @@ tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-surface":"#fafdfe",
 </div>
 </div>
 <div id="mobile-menu" class="hidden md:hidden bg-[#0b0f10] border-t border-outline-variant/10 px-6 py-4 flex flex-col gap-1 font-headline"><a class="text-[#cf96ff] font-bold py-2 border-b border-outline-variant/10" href="/">Home</a>
-<a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10" href="/leistungen/">Leistungen</a>
-<a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10 pl-4 text-sm flex items-center gap-2" href="/seo/"><span class="text-primary">↳</span> SEO-Optimierung</a>
-<a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10 pl-4 text-sm flex items-center gap-2" href="/geo/"><span class="text-primary">↳</span> GEO-Optimierung</a>
-<a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10 pl-4 text-sm flex items-center gap-2" href="/conversion-rate-optimierung/"><span class="text-primary">↳</span> Conversion-Optimierung</a>
-<a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10 pl-4 text-sm flex items-center gap-2" href="/ux-ui/"><span class="text-primary">↳</span> UX/UI Design</a>
-<a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10 pl-4 text-sm flex items-center gap-2" href="/webseiten-erstellen/"><span class="text-primary">↳</span> Webseiten &amp; Onlineshop Erstellung</a>
-<a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10 pl-4 text-sm flex items-center gap-2" href="/kundenbindung/"><span class="text-primary">↳</span> Kundenbindung & Retention</a>
-<a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10 pl-4 text-sm flex items-center gap-2" href="/ai-tools/"><span class="text-primary">↳</span> AI-Tools & Automationen</a>
-<a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10 pl-4 text-sm flex items-center gap-2" href="/social-media/"><span class="text-primary">↳</span> Social Media</a>
+<div class="border-b border-outline-variant/10">
+<div class="flex items-center justify-between py-2">
+<a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors" href="/leistungen/">Leistungen</a>
+<button onclick="toggleMobileLeistungen()" id="mobile-leistungen-btn" class="p-1 text-primary transition-transform duration-300" aria-label="Leistungen ausklappen">
+<span class="material-symbols-outlined text-lg">expand_more</span>
+</button>
+</div>
+<div id="mobile-leistungen-sub" class="hidden flex-col gap-0 pb-2">
+<a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/5 pl-4 text-sm flex items-center gap-2" href="/seo/"><span class="text-primary">↳</span> SEO-Optimierung</a>
+<a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/5 pl-4 text-sm flex items-center gap-2" href="/geo/"><span class="text-primary">↳</span> GEO-Optimierung</a>
+<a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/5 pl-4 text-sm flex items-center gap-2" href="/conversion-rate-optimierung/"><span class="text-primary">↳</span> Conversion-Optimierung</a>
+<a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/5 pl-4 text-sm flex items-center gap-2" href="/ux-ui/"><span class="text-primary">↳</span> UX/UI Design</a>
+<a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/5 pl-4 text-sm flex items-center gap-2" href="/webseiten-erstellen/"><span class="text-primary">↳</span> Webseiten &amp; Onlineshop erstellen</a>
+<a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/5 pl-4 text-sm flex items-center gap-2" href="/kundenbindung/"><span class="text-primary">↳</span> Kundenbindung & Retention</a>
+<a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/5 pl-4 text-sm flex items-center gap-2" href="/ai-tools/"><span class="text-primary">↳</span> AI-Tools & Automationen</a>
+<a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 pl-4 text-sm flex items-center gap-2" href="/social-media/"><span class="text-primary">↳</span> Social Media</a>
+</div>
+</div>
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10" href="/projekte/">Projekte</a>
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10" href="/ueber/">Über e-commotion</a>
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10" href="/kontakt/">Kontakt</a>
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10" href="/faq/">FAQ</a>
-<a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10" href="/blog/">Blog</a><a href="/kontakt/" class="kinetic-gradient text-on-surface font-bold px-6 py-3 rounded-full text-center mt-4">Kostenlos beraten lassen</a></div>
+<a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10" href="/blog/">Blog</a><a href="/kontakt/" class="hidden md:inline-flex kinetic-gradient text-on-surface font-bold px-6 py-3 rounded-full text-center mt-4">Kostenlos beraten lassen</a></div>
 </nav>
 <script>
 function toggleMenu(){const menu=document.getElementById('mobile-menu');const b1=document.getElementById('bar1'),b2=document.getElementById('bar2'),b3=document.getElementById('bar3');menu.classList.toggle('hidden');b1.classList.toggle('rotate-45');b1.classList.toggle('translate-y-2');b3.classList.toggle('-rotate-45');b3.classList.toggle('-translate-y-2');b2.classList.toggle('opacity-0');}
@@ -172,11 +181,11 @@ document.addEventListener('click', function(e) {
 <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
 <div class="md:col-span-7 z-10">
 <span class="inline-block px-4 py-1.5 rounded-full bg-[#1a1a2e] border border-primary/40 text-primary font-label text-xs font-bold tracking-widest mb-6">FREELANCER & E-COMMERCE SPEZIALIST · ZÜRICH</span>
-<h1 class="text-3xl md:text-7xl font-extrabold font-headline leading-[1.1] tracking-tighter mb-4">
-                        E-Commerce Agentur Schweiz –<br/><span class="text-primary italic">SEO, GEO & mehr Umsatz für Deinen Onlineshop.</span>
+<h1 class="text-2xl md:text-7xl font-extrabold font-headline leading-[1.1] tracking-tighter mb-3">
+                        E-Commerce Agentur Schweiz – SEO, GEO & mehr Umsatz für Deinen Onlineshop.
 </h1>
 <p class="text-primary font-label text-sm font-bold tracking-[0.2em] uppercase mb-8">Pure Motion. Pure Commerce.</p>
-<p class="text-lg md:text-xl text-on-surface-variant max-w-xl leading-relaxed mb-10">
+<p class="text-base md:text-xl text-on-surface-variant max-w-xl leading-relaxed mb-6">
                         Ich helfe Dir dabei, Deinen Onlineshop sichtbarer zu machen: mit SEO, GEO, gezielter Analyse und einer Strategie, die wirklich mehr Kunden bringt.
                     </p>
 <div class="flex flex-wrap gap-4">
@@ -300,13 +309,14 @@ document.addEventListener('click', function(e) {
 <!-- Left: Text -->
 <div>
 <span class="inline-block px-4 py-1.5 rounded-full bg-[#1a1a2e] border border-primary/40 text-primary font-label text-xs font-bold tracking-widest mb-6">FULL-SERVICE E-COMMERCE · SCHWEIZ</span>
-<h2 class="font-headline text-3xl md:text-4xl font-extrabold tracking-tight mb-6">Der komplette digitale Aufbau –<br/><span class="text-primary italic">koordiniert, bezahlbar und wirklich umgesetzt.</span></h2>
+<h2 class="font-headline text-3xl md:text-4xl font-extrabold tracking-tight mb-6">Full-Service E-Commerce Agentur Schweiz – alles aus einer Hand, bezahlbar und wirklich umgesetzt.</h2>
 
-<p class="text-on-surface-variant text-lg leading-relaxed mb-6">Viele kleine Unternehmen arbeiten mit 3, 4 oder 5 verschiedenen Dienstleistern gleichzeitig: einer für die Website, einer für SEO, ein anderer für Social Media. Das Ergebnis sind hohe Kosten, schlechte Abstimmung und niemand der das Gesamtbild im Blick hat.</p>
+<p class="md:hidden text-on-surface-variant text-base leading-relaxed mb-6">Ein Ansprechpartner. Alles abgestimmt. Vom ersten Gespräch bis zum fertigen Setup.</p>
+<p class="hidden md:block text-on-surface-variant text-lg leading-relaxed mb-6">Viele kleine Unternehmen arbeiten mit 3, 4 oder 5 verschiedenen Dienstleistern gleichzeitig: einer für die Website, einer für SEO, ein anderer für Social Media. Das Ergebnis sind hohe Kosten, schlechte Abstimmung und niemand der das Gesamtbild im Blick hat.</p>
 
-<p class="text-on-surface-variant text-lg leading-relaxed mb-6">Bei e-commotion ist das anders. Ich übernehme die Koordination des gesamten digitalen Setups – von der Website über SEO und GEO bis zu Social Media und Automationen. Alles abgestimmt, alles aus einer Hand. Und wo Spezialisten sinnvoll sind bringe ich mein Partnernetzwerk mit – geprüft, erfahren und direkt eingebunden.</p>
+<p class="hidden md:block text-on-surface-variant text-lg leading-relaxed mb-6">Bei e-commotion ist das anders. Ich übernehme die Koordination des gesamten digitalen Setups – von der Website über SEO und GEO bis zu Social Media und Automationen. Alles abgestimmt, alles aus einer Hand. Und wo Spezialisten sinnvoll sind bringe ich mein Partnernetzwerk mit – geprüft, erfahren und direkt eingebunden.</p>
 
-<p class="text-on-surface-variant text-lg leading-relaxed mb-8">Das macht keinen Kompromiss bei der Qualität. Es macht den Einstieg für kleine Unternehmen realistisch – ohne fünf separate Agenturverträge, ohne Koordinationsaufwand und ohne Budget das sofort ausgereizt ist. Ein Ansprechpartner. Eine Strategie. Echte Resultate.</p>
+<p class="hidden md:block text-on-surface-variant text-lg leading-relaxed mb-8">Das macht keinen Kompromiss bei der Qualität. Es macht den Einstieg für kleine Unternehmen realistisch – ohne fünf separate Agenturverträge, ohne Koordinationsaufwand und ohne Budget das sofort ausgereizt ist. Ein Ansprechpartner. Eine Strategie. Echte Resultate.</p>
 
 <a href="/kontakt/" class="hidden md:inline-flex kinetic-gradient text-on-surface font-bold px-8 py-4 rounded-full items-center gap-2 group transition-all hover:scale-105">Kostenlos beraten lassen<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span></a>
 </div>
@@ -419,7 +429,7 @@ cw.addEventListener('touchend',e=>{
 <section class="py-10 md:py-32 bg-surface">
 <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-16">
 <div class="lg:col-span-5">
-<h2 class="text-2xl md:text-4xl font-extrabold font-headline tracking-tight mb-6">Warum Schweizer Marken auf mich <span class="text-primary italic">setzen</span></h2>
+<h2 class="text-2xl md:text-4xl font-extrabold font-headline tracking-tight mb-6">Warum Schweizer Marken auf mich setzen</h2>
 <div class="space-y-12">
 <div class="flex gap-6">
 <div class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center shrink-0">
@@ -427,7 +437,7 @@ cw.addEventListener('touchend',e=>{
 </div>
 <div>
 <h4 class="text-xl font-bold font-headline mb-2">Bewährte E-Commerce-Expertise</h4>
-<p class="text-on-surface-variant leading-relaxed">Über 4 Jahre Praxis als E-Commerce Manager in einem dynamischen, schnellwachsenden Unternehmen – immer nah am Markt, immer nah an den Trends.</p>
+<p class="hidden md:block text-on-surface-variant leading-relaxed">Über 4 Jahre Praxis als E-Commerce Manager in einem dynamischen, schnellwachsenden Unternehmen – immer nah am Markt, immer nah an den Trends.</p>
 </div>
 </div>
 <div class="flex gap-6">
@@ -436,7 +446,7 @@ cw.addEventListener('touchend',e=>{
 </div>
 <div>
 <h4 class="text-xl font-bold font-headline mb-2">Resultate statt Berichte</h4>
-<p class="text-on-surface-variant leading-relaxed">Ich messe mich an Deinem Umsatz, nicht an Präsentationen. Meine KPIs sind direkt mit Deinem Geschäftserfolg verknüpft.</p>
+<p class="hidden md:block text-on-surface-variant leading-relaxed">Ich messe mich an Deinem Umsatz, nicht an Präsentationen. Meine KPIs sind direkt mit Deinem Geschäftserfolg verknüpft.</p>
 </div>
 </div>
 <div class="flex gap-6">
@@ -445,7 +455,7 @@ cw.addEventListener('touchend',e=>{
 </div>
 <div>
 <h4 class="text-xl font-bold font-headline mb-2">Shopify-Expertise & Plattform-Know-how</h4>
-<p class="text-on-surface-variant leading-relaxed">Shopify ist meine Kernkompetenz – ich kenne aber auch andere Systeme. Kombiniert mit fundiertem Wissen in AI-Tools und Automationen bringe ich Dir echten technischen Mehrwert.</p>
+<p class="hidden md:block text-on-surface-variant leading-relaxed">Shopify ist meine Kernkompetenz – ich kenne aber auch andere Systeme. Kombiniert mit fundiertem Wissen in AI-Tools und Automationen bringe ich Dir echten technischen Mehrwert.</p>
 </div>
 </div>
 </div>
@@ -477,7 +487,7 @@ cw.addEventListener('touchend',e=>{
 <div class="max-w-7xl mx-auto px-8">
 <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
 <div class="max-w-2xl">
-<h2 class="text-4xl font-extrabold font-headline tracking-tight mb-4">In diesen Bereichen kann ich Dich unterstützen.</h2>
+<h2 class="text-xl md:text-4xl font-extrabold font-headline tracking-tight mb-4">In diesen Bereichen kann ich Dich unterstützen.</h2>
 <p class="text-on-surface-variant">Von SEO über Social Media bis zur Kundenbindung – ein Überblick. Alle Details auf der Leistungsseite.</p>
 </div>
 <a href="/leistungen/" class="text-primary font-bold font-label flex items-center gap-2 group">
@@ -539,10 +549,10 @@ ALLE LEISTUNGEN <span class="material-symbols-outlined group-hover:ml-2 transiti
 <!-- Final CTA Section -->
 <section class="py-12 md:py-24 relative overflow-hidden">
 <div class="max-w-5xl mx-auto px-8 text-center relative z-10">
-<h2 class="text-5xl md:text-6xl font-extrabold font-headline tracking-tighter mb-8">Bereit, Deinen Shop auf das nächste Level zu <span class="text-primary italic">heben?</span></h2>
-<p class="text-xl text-on-surface-variant mb-12 max-w-2xl mx-auto leading-relaxed">Lass uns gemeinsam herausfinden wo der grösste Hebel in Deinem Shop liegt und wie ich Dir helfen kann dauerhaft zu wachsen.</p>
+<h2 class="text-2xl md:text-6xl font-extrabold font-headline tracking-tighter mb-6">Bereit, Deinen Shop auf das nächste Level zu heben?</h2>
+<p class="hidden md:block text-xl text-on-surface-variant mb-12 max-w-2xl mx-auto leading-relaxed">Lass uns gemeinsam herausfinden wo der grösste Hebel in Deinem Shop liegt und wie ich Dir helfen kann dauerhaft zu wachsen.</p>
 <div class="flex flex-col md:flex-row justify-center items-center gap-6">
-<a href="/kontakt/" class="kinetic-gradient text-on-surface font-bold px-12 py-5 rounded-full text-lg transform hover:scale-105 active:scale-95 transition-all shadow-2xl inline-block">Jetzt kostenlos beraten lassen</a>
+<a href="/kontakt/" class="hidden md:inline-flex kinetic-gradient text-on-surface font-bold px-12 py-5 rounded-full text-lg transform hover:scale-105 active:scale-95 transition-all shadow-2xl inline-block">Jetzt kostenlos beraten lassen</a>
 
 </div>
 </div>
@@ -555,7 +565,7 @@ ALLE LEISTUNGEN <span class="material-symbols-outlined group-hover:ml-2 transiti
 <button onclick="document.getElementById('impressum-modal').classList.add('hidden');document.getElementById('impressum-modal').classList.remove('flex');" class="absolute top-4 right-4 text-on-surface-variant hover:text-primary transition-colors">
 <span class="material-symbols-outlined">close</span>
 </button>
-<p class="font-headline text-2xl font-bold mb-6">Impressum</p>
+<p class="font-headline text-lg md:text-2xl font-bold mb-6">Impressum</p>
 <div class="space-y-1 text-on-surface-variant font-body text-sm leading-relaxed">
 <p class="text-on-surface font-semibold">Rico Thalparpan</p>
 <p>e-commotion</p>
@@ -583,7 +593,7 @@ ALLE LEISTUNGEN <span class="material-symbols-outlined group-hover:ml-2 transiti
 </footer>
 <!-- Sticky Mobile CTA -->
 <div class="fixed bottom-6 left-0 right-0 flex justify-center z-40 md:hidden px-6">
-<a href="/kontakt/" class="kinetic-gradient text-on-surface font-bold px-8 py-4 rounded-full text-sm shadow-[0_8px_30px_rgba(141,0,230,0.4)] flex items-center gap-2 active:scale-95 transition-all duration-300">
+<a href="/kontakt/" class="hidden md:inline-flex kinetic-gradient text-on-surface font-bold px-8 py-4 rounded-full text-sm shadow-[0_8px_30px_rgba(141,0,230,0.4)] flex items-center gap-2 active:scale-95 transition-all duration-300">
 <span class="material-symbols-outlined" style="font-size:18px;">chat</span>
 Kostenlos beraten lassen
 </a>
