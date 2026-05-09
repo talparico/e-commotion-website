@@ -34,16 +34,16 @@ tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-surface":"#fafdfe",
 <div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
 <a href="/" class="text-xl font-bold tracking-tighter text-[#fafdfe] font-headline">e-commotion.ch</a>
 <div class="hidden md:flex items-center space-x-8 font-headline tracking-tight"><a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors duration-300" href="/">Home</a>
-<div class="relative" id="nav-dropdown-wrapper"><button class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors duration-300 flex items-center gap-1 font-headline tracking-tight" onclick="toggleDropdown()" id="nav-dropdown-btn">Leistungen <span class="material-symbols-outlined" style="font-size:16px">expand_more</span></button><div id="nav-dropdown" class="absolute top-full left-0 mt-2 w-64 bg-[#0b0f10] border border-outline-variant/30 rounded-xl p-2 shadow-xl z-50 hidden"><a href="/leistungen/" class="block px-4 py-2.5 text-sm text-[#cf96ff] font-bold rounded-lg transition-colors">Alle Leistungen</a>
+<a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors duration-300" href="/projekte/">Projekte</a>
+<div class="relative" id="nav-dropdown-wrapper"><button class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors duration-300 flex items-center gap-1 font-headline tracking-tight" onclick="toggleDropdown()" id="nav-dropdown-btn">Dienstleistungen <span class="material-symbols-outlined" style="font-size:16px">expand_more</span></button><div id="nav-dropdown" class="absolute top-full left-0 mt-2 w-72 bg-[#0b0f10] border border-outline-variant/30 rounded-xl p-2 shadow-xl z-50 hidden"><a href="/leistungen/" class="block px-4 py-2.5 text-sm text-[#cf96ff] font-bold rounded-lg transition-colors">Alle Dienstleistungen</a>
 <a href="/seo/" class="block px-4 py-2.5 text-sm text-[#fafdfe] opacity-70 hover:text-[#cf96ff] hover:opacity-100 rounded-lg transition-colors">SEO-Optimierung</a>
 <a href="/geo/" class="block px-4 py-2.5 text-sm text-[#fafdfe] opacity-70 hover:text-[#cf96ff] hover:opacity-100 rounded-lg transition-colors">GEO-Optimierung</a>
 <a href="/conversion-rate-optimierung/" class="block px-4 py-2.5 text-sm text-[#fafdfe] opacity-70 hover:text-[#cf96ff] hover:opacity-100 rounded-lg transition-colors">Conversion-Optimierung</a>
 <a href="/ux-ui/" class="block px-4 py-2.5 text-sm text-[#fafdfe] opacity-70 hover:text-[#cf96ff] hover:opacity-100 rounded-lg transition-colors">UX/UI Design</a>
-<a href="/webseiten-erstellen/" class="block px-4 py-2.5 text-sm text-[#fafdfe] opacity-70 hover:text-[#cf96ff] hover:opacity-100 rounded-lg transition-colors">Webseiten &amp; Onlineshop Erstellung</a>
+<a href="/webseiten-erstellen/" class="block px-4 py-2.5 text-sm text-[#fafdfe] opacity-70 hover:text-[#cf96ff] hover:opacity-100 rounded-lg transition-colors">Webseiten & Onlineshop erstellen</a>
 <a href="/kundenbindung/" class="block px-4 py-2.5 text-sm text-[#fafdfe] opacity-70 hover:text-[#cf96ff] hover:opacity-100 rounded-lg transition-colors">Kundenbindung & Retention</a>
 <a href="/ai-tools/" class="block px-4 py-2.5 text-sm text-[#fafdfe] opacity-70 hover:text-[#cf96ff] hover:opacity-100 rounded-lg transition-colors">AI-Tools & Automationen</a>
 <a href="/social-media/" class="block px-4 py-2.5 text-sm text-[#fafdfe] opacity-70 hover:text-[#cf96ff] hover:opacity-100 rounded-lg transition-colors">Social Media</a></div></div>
-<a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors duration-300" href="/projekte/">Projekte</a>
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors duration-300" href="/ueber/">Über e-commotion</a>
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors duration-300" href="/kontakt/">Kontakt</a>
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors duration-300" href="/faq/">FAQ</a>
@@ -58,16 +58,24 @@ tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-surface":"#fafdfe",
 </div>
 </div>
 <div id="mobile-menu" class="hidden md:hidden bg-[#0b0f10] border-t border-outline-variant/10 px-6 py-4 flex flex-col gap-1 font-headline"><a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10" href="/">Home</a>
-<a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10" href="/leistungen/">Leistungen</a>
-<a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10 pl-4 text-sm flex items-center gap-2" href="/seo/"><span class="text-primary">↳</span> SEO-Optimierung</a>
-<a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10 pl-4 text-sm flex items-center gap-2" href="/geo/"><span class="text-primary">↳</span> GEO-Optimierung</a>
-<a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10 pl-4 text-sm flex items-center gap-2" href="/conversion-rate-optimierung/"><span class="text-primary">↳</span> Conversion-Optimierung</a>
-<a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10 pl-4 text-sm flex items-center gap-2" href="/ux-ui/"><span class="text-primary">↳</span> UX/UI Design</a>
-<a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10 pl-4 text-sm flex items-center gap-2" href="/webseiten-erstellen/"><span class="text-primary">↳</span> Webseiten &amp; Onlineshop Erstellung</a>
-<a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10 pl-4 text-sm flex items-center gap-2" href="/kundenbindung/"><span class="text-primary">↳</span> Kundenbindung & Retention</a>
-<a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10 pl-4 text-sm flex items-center gap-2" href="/ai-tools/"><span class="text-primary">↳</span> AI-Tools & Automationen</a>
-<a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10 pl-4 text-sm flex items-center gap-2" href="/social-media/"><span class="text-primary">↳</span> Social Media</a>
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10" href="/projekte/">Projekte</a>
+<div class="border-b border-outline-variant/10">
+<div class="flex items-center justify-between py-2">
+<a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff]" href="/leistungen/">Dienstleistungen</a>
+<button onclick="toggleMobileLeistungen()" id="mobile-leistungen-btn" class="p-1 text-primary" aria-label="ausklappen">
+<span class="material-symbols-outlined text-lg" id="mobile-leistungen-icon">expand_more</span>
+</button>
+</div>
+<div id="mobile-leistungen-sub" class="hidden flex-col gap-0 pb-2"><a class="text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/5 pl-4 text-sm flex items-center gap-2" href="/leistungen/"><span class="text-primary">↳</span> Alle Dienstleistungen</a>
+<a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/5 pl-4 text-sm flex items-center gap-2" href="/seo/"><span class="text-primary">↳</span> SEO-Optimierung</a>
+<a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/5 pl-4 text-sm flex items-center gap-2" href="/geo/"><span class="text-primary">↳</span> GEO-Optimierung</a>
+<a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/5 pl-4 text-sm flex items-center gap-2" href="/conversion-rate-optimierung/"><span class="text-primary">↳</span> Conversion-Optimierung</a>
+<a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/5 pl-4 text-sm flex items-center gap-2" href="/ux-ui/"><span class="text-primary">↳</span> UX/UI Design</a>
+<a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/5 pl-4 text-sm flex items-center gap-2" href="/webseiten-erstellen/"><span class="text-primary">↳</span> Webseiten & Onlineshop erstellen</a>
+<a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/5 pl-4 text-sm flex items-center gap-2" href="/kundenbindung/"><span class="text-primary">↳</span> Kundenbindung & Retention</a>
+<a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/5 pl-4 text-sm flex items-center gap-2" href="/ai-tools/"><span class="text-primary">↳</span> AI-Tools & Automationen</a>
+<a class="text-[#fafdfe] opacity-60 hover:text-[#cf96ff] transition-colors py-2  pl-4 text-sm flex items-center gap-2" href="/social-media/"><span class="text-primary">↳</span> Social Media</a></div>
+</div>
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10" href="/ueber/">Über e-commotion</a>
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10" href="/kontakt/">Kontakt</a>
 <a class="text-[#fafdfe] opacity-70 hover:text-[#cf96ff] transition-colors py-2 border-b border-outline-variant/10" href="/faq/">FAQ</a>
@@ -76,6 +84,7 @@ tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-surface":"#fafdfe",
 <script>
 function toggleMenu(){const menu=document.getElementById('mobile-menu');const b1=document.getElementById('bar1'),b2=document.getElementById('bar2'),b3=document.getElementById('bar3');menu.classList.toggle('hidden');b1.classList.toggle('rotate-45');b1.classList.toggle('translate-y-2');b3.classList.toggle('-rotate-45');b3.classList.toggle('-translate-y-2');b2.classList.toggle('opacity-0');}
 function toggleDropdown(){const dd=document.getElementById('nav-dropdown');dd.classList.toggle('hidden');}
+function toggleMobileLeistungen(){const sub=document.getElementById('mobile-leistungen-sub');const icon=document.getElementById('mobile-leistungen-icon');const open=sub.classList.contains('hidden');sub.classList.toggle('hidden');sub.classList.toggle('flex');icon.textContent=open?'expand_less':'expand_more';}
 document.addEventListener('click',function(e){const wrapper=document.getElementById('nav-dropdown-wrapper');if(wrapper&&!wrapper.contains(e.target)){document.getElementById('nav-dropdown').classList.add('hidden');}});
 </script>
 <script>
@@ -97,13 +106,27 @@ document.addEventListener('click',function(e){const wrapper=document.getElementB
 function toggleMenu(){const menu=document.getElementById('mobile-menu');const b1=document.getElementById('bar1'),b2=document.getElementById('bar2'),b3=document.getElementById('bar3');menu.classList.toggle('hidden');b1.classList.toggle('rotate-45');b1.classList.toggle('translate-y-2');b3.classList.toggle('-rotate-45');b3.classList.toggle('-translate-y-2');b2.classList.toggle('opacity-0');}
 function toggleDropdown(){const dd=document.getElementById('nav-dropdown');dd.classList.toggle('hidden');}
 document.addEventListener('click',function(e){const wrapper=document.getElementById('nav-dropdown-wrapper');if(wrapper&&!wrapper.contains(e.target)){document.getElementById('nav-dropdown').classList.add('hidden');}});
-</script><main class="pt-32 pb-24">
+</script>
+<script>
+function toggleMenu(){const menu=document.getElementById('mobile-menu');const b1=document.getElementById('bar1'),b2=document.getElementById('bar2'),b3=document.getElementById('bar3');menu.classList.toggle('hidden');b1.classList.toggle('rotate-45');b1.classList.toggle('translate-y-2');b3.classList.toggle('-rotate-45');b3.classList.toggle('-translate-y-2');b2.classList.toggle('opacity-0');}
+function toggleDropdown(){const dd=document.getElementById('nav-dropdown');dd.classList.toggle('hidden');}
+document.addEventListener('click',function(e){const wrapper=document.getElementById('nav-dropdown-wrapper');if(wrapper&&!wrapper.contains(e.target)){document.getElementById('nav-dropdown').classList.add('hidden');}});
+</script><!-- Fixed side contacts -->
+<div class="fixed right-0 top-1/2 -translate-y-1/2 z-40 flex flex-col overflow-hidden rounded-l-xl shadow-2xl">
+<a href="tel:+41763382702" title="+41 76 338 27 02" class="bg-surface-container-high hover:bg-primary transition-colors w-10 h-10 flex items-center justify-center text-primary hover:text-on-primary border-b border-outline-variant/20">
+<span class="material-symbols-outlined text-lg">call</span>
+</a>
+<a href="mailto:service@e-commotion.ch" title="service@e-commotion.ch" class="bg-surface-container-high hover:bg-primary transition-colors w-10 h-10 flex items-center justify-center text-primary hover:text-on-primary">
+<span class="material-symbols-outlined text-lg">mail</span>
+</a>
+</div>
+<main class="pt-32 pb-24">
 
 <!-- Hero -->
 <section class="max-w-7xl mx-auto px-8 mb-16">
 <div class="max-w-3xl">
 <span class="inline-block px-4 py-1.5 rounded-full bg-[#1a1a2e] border border-primary/40 text-primary font-label text-xs font-bold tracking-widest mb-6">E-COMMERCE BLOG · SCHWEIZ</span>
-<h1 class="font-headline text-4xl md:text-6xl font-extrabold tracking-tighter leading-tight mb-6">E-Commerce Wissen –<br/><span class="text-primary italic">direkt aus der Praxis.</span></h1>
+<h1 class="font-headline text-2xl md:text-5xl font-extrabold tracking-tighter leading-tight mb-4">E-Commerce Wissen – direkt aus der Praxis.</h1>
 <p class="text-on-surface-variant text-lg leading-relaxed max-w-2xl">Praxisnahe Artikel zu SEO, GEO, Conversion-Optimierung, AI-Tools und Social Media. Kein Fachjargon – nur was wirklich funktioniert für Schweizer Onlineshops.</p>
 </div>
 </section>
@@ -151,7 +174,7 @@ document.addEventListener('click',function(e){const wrapper=document.getElementB
 <span class="material-symbols-outlined text-primary text-4xl mb-4 block">edit_note</span>
 <h2 class="font-headline text-xl font-bold mb-3">Weitere Artikel folgen in Kürze</h2>
 <p class="text-on-surface-variant max-w-md mx-auto">Neue Beiträge zu SEO, GEO, Conversion-Optimierung und mehr erscheinen monatlich. Schreib mich an um auf dem Laufenden zu bleiben.</p>
-<a href="/kontakt/" class="mt-6 kinetic-gradient text-on-surface font-bold px-6 py-3 rounded-full inline-block hover:scale-105 transition-all">Kontakt aufnehmen</a>
+<a href="/kontakt/" class="hidden md:inline-flex mt-6 kinetic-gradient text-on-surface font-bold px-6 py-3 rounded-full inline-block hover:scale-105 transition-all">Kontakt aufnehmen</a>
 </div>
 </section>
 
@@ -159,16 +182,24 @@ document.addEventListener('click',function(e){const wrapper=document.getElementB
 <section class="max-w-7xl mx-auto px-8 mb-16">
 <div class="bg-surface-container rounded-xl p-8 md:p-12 border border-outline-variant/20 flex flex-col md:flex-row gap-8 items-center justify-between">
 <div class="max-w-xl">
-<h2 class="font-headline text-2xl font-bold mb-3">Neue Artikel direkt per E-Mail</h2>
+<h2 class="font-headline text-lg md:text-2xl font-bold mb-3">Neue Artikel direkt per E-Mail</h2>
 <p class="text-on-surface-variant">Neue Beiträge zu E-Commerce, SEO und GEO erscheinen monatlich. Schreib mich an und ich halte Dich auf dem Laufenden.</p>
 </div>
-<a href="/kontakt/" class="kinetic-gradient text-on-surface font-bold px-8 py-4 rounded-full whitespace-nowrap hover:scale-105 active:scale-95 transition-all shadow-xl inline-block">Kontakt aufnehmen</a>
+<a href="/kontakt/" class="hidden md:inline-flex kinetic-gradient text-on-surface font-bold px-8 py-4 rounded-full whitespace-nowrap hover:scale-105 active:scale-95 transition-all shadow-xl inline-block">Kontakt aufnehmen</a>
 </div>
 </section>
 
 </main><!-- Sticky Mobile CTA -->
-<div class="fixed bottom-6 left-0 right-0 flex justify-center z-40 md:hidden px-6"><a href="/kontakt/" class="kinetic-gradient text-on-surface font-bold px-8 py-4 rounded-full text-sm shadow-[0_8px_30px_rgba(141,0,230,0.4)] flex items-center gap-2 active:scale-95 transition-all duration-300"><span class="material-symbols-outlined" style="font-size:18px;">chat</span>Kostenlos beraten lassen</a></div>
-<div id="impressum-modal" class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/60 backdrop-blur-sm"><div class="bg-surface-container-high rounded-xl p-8 max-w-md w-full mx-4 relative ghost-border"><button onclick="document.getElementById('impressum-modal').classList.add('hidden');document.getElementById('impressum-modal').classList.remove('flex');" class="absolute top-4 right-4 text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined">close</span></button><p class="font-headline text-2xl font-bold mb-6">Impressum</p><div class="space-y-1 text-on-surface-variant font-body text-sm"><p class="text-on-surface font-semibold">Rico Thalparpan</p><p>e-commotion</p><p>Metzgerweg 12</p><p>8906 Bonstetten</p><p class="pt-2"><a href="mailto:service@e-commotion.ch" class="text-primary hover:underline">service@e-commotion.ch</a></p></div></div></div>
+<div class="fixed bottom-6 left-0 right-0 flex justify-center z-40 md:hidden px-6"><a href="/kontakt/" class="hidden md:inline-flex kinetic-gradient text-on-surface font-bold px-8 py-4 rounded-full text-sm shadow-[0_8px_30px_rgba(141,0,230,0.4)] flex items-center gap-2 active:scale-95 transition-all duration-300"><span class="material-symbols-outlined" style="font-size:18px;">chat</span>Kostenlos beraten lassen</a></div>
+<div id="impressum-modal" class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/60 backdrop-blur-sm"><div class="bg-surface-container-high rounded-xl p-8 max-w-md w-full mx-4 relative ghost-border"><button onclick="document.getElementById('impressum-modal').classList.add('hidden');document.getElementById('impressum-modal').classList.remove('flex');" class="absolute top-4 right-4 text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined">close</span></button><p class="font-headline text-lg md:text-2xl font-bold mb-6">Impressum</p><div class="space-y-1 text-on-surface-variant font-body text-sm"><p class="text-on-surface font-semibold">Rico Thalparpan</p><p>e-commotion</p><p>Metzgerweg 12</p><p>8906 Bonstetten</p><p class="pt-2"><a href="mailto:service@e-commotion.ch" class="text-primary hover:underline">service@e-commotion.ch</a></p></div></div></div>
 <footer class="bg-[#0b0f10] w-full py-10 px-6 pb-24 md:pb-10 border-t border-outline-variant/10"><div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6"><div class="flex flex-col items-center md:items-start gap-1"><a href="/" class="text-lg font-black text-[#fafdfe] font-headline">e-commotion.ch</a><p class="text-[#fafdfe] opacity-40 text-xs">© 2026 e-commotion.ch · Alle Rechte vorbehalten · Schweiz</p></div><div class="flex flex-wrap justify-center gap-6 text-sm"><a class="text-[#fafdfe] opacity-50 hover:text-[#cf96ff] hover:opacity-100 transition-opacity" href="/datenschutz/">Datenschutz</a><button onclick="document.getElementById('impressum-modal').classList.remove('hidden');document.getElementById('impressum-modal').classList.add('flex');" class="text-[#fafdfe] opacity-50 hover:text-[#cf96ff] hover:opacity-100 transition-opacity cursor-pointer bg-transparent border-0 text-sm p-0">Impressum</button><a class="text-[#fafdfe] opacity-50 hover:text-[#cf96ff] hover:opacity-100 transition-opacity" href="https://www.linkedin.com/company/e-commotion" target="_blank" rel="noopener">LinkedIn</a><a class="text-[#fafdfe] opacity-50 hover:text-[#cf96ff] hover:opacity-100 transition-opacity" href="https://www.instagram.com/e_commotion_ch" target="_blank" rel="noopener">Instagram</a></div></div><p class="text-[10px] text-surface-container-low opacity-0 select-none" aria-hidden="true">Zuletzt aktualisiert: April 2026 · e-commotion.ch · Zürich, Schweiz</p></footer>
 <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 z-[200] md:bottom-6 md:left-6 md:right-auto md:max-w-md bg-[#0b0f10]/95 backdrop-blur-xl border-t border-outline-variant/30 md:border md:rounded-xl p-6 shadow-2xl" style="display:none;"><p class="text-sm text-on-surface-variant leading-relaxed mb-4">Diese Webseite verwendet Cookies. Mit der Nutzung stimmst Du unserer <a href="/datenschutz/" class="text-primary underline">Datenschutzrichtlinie</a> zu.</p><div class="flex flex-col sm:flex-row gap-3"><button onclick="acceptCookies()" class="kinetic-gradient text-on-surface font-bold px-6 py-2.5 rounded-full text-sm flex-1">Alle akzeptieren</button><button onclick="declineCookies()" class="bg-surface-container-high text-on-surface-variant font-bold px-6 py-2.5 rounded-full text-sm flex-1">Nur notwendige</button></div></div>
-<script>function showCookieBanner(){if(!localStorage.getItem('cookie-consent')){setTimeout(function(){document.getElementById('cookie-banner').style.display='block';},1500);}}function acceptCookies(){localStorage.setItem('cookie-consent','accepted');document.getElementById('cookie-banner').style.display='none';}function declineCookies(){localStorage.setItem('cookie-consent','declined');document.getElementById('cookie-banner').style.display='none';}window.addEventListener('DOMContentLoaded',showCookieBanner);</script></body></html>
+<script>function showCookieBanner(){if(!localStorage.getItem('cookie-consent')){setTimeout(function(){document.getElementById('cookie-banner').style.display='block';},1500);}}function acceptCookies(){localStorage.setItem('cookie-consent','accepted');document.getElementById('cookie-banner').style.display='none';}function declineCookies(){localStorage.setItem('cookie-consent','declined');document.getElementById('cookie-banner').style.display='none';}window.addEventListener('DOMContentLoaded',showCookieBanner);
+function toggleMobileLeistungen(){
+  const sub=document.getElementById('mobile-leistungen-sub');
+  const btn=document.getElementById('mobile-leistungen-btn');
+  const isHidden=sub.classList.contains('hidden');
+  sub.classList.toggle('hidden');
+  sub.classList.toggle('flex');
+  btn.style.transform=isHidden?'rotate(180deg)':'';
+}</script></body></html>
