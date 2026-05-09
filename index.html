@@ -167,12 +167,12 @@ document.addEventListener('click', function(e) {
 </script>
 <main class="relative">
 <!-- Hero Section -->
-<section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+<section class="relative min-h-[auto] md:min-h-screen flex items-center pt-24 pb-12 md:py-0 overflow-hidden">
 <div class="absolute inset-0 noise-texture pointer-events-none"></div>
 <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
 <div class="md:col-span-7 z-10">
 <span class="inline-block px-4 py-1.5 rounded-full bg-[#1a1a2e] border border-primary/40 text-primary font-label text-xs font-bold tracking-widest mb-6">FREELANCER & E-COMMERCE SPEZIALIST · ZÜRICH</span>
-<h1 class="text-5xl md:text-7xl font-extrabold font-headline leading-[1.1] tracking-tighter mb-4">
+<h1 class="text-3xl md:text-7xl font-extrabold font-headline leading-[1.1] tracking-tighter mb-4">
                         E-Commerce Agentur Schweiz –<br/><span class="text-primary italic">SEO, GEO & mehr Umsatz für Deinen Onlineshop.</span>
 </h1>
 <p class="text-primary font-label text-sm font-bold tracking-[0.2em] uppercase mb-8">Pure Motion. Pure Commerce.</p>
@@ -183,7 +183,7 @@ document.addEventListener('click', function(e) {
 <a href="/kontakt/" class="kinetic-gradient text-on-surface font-bold px-8 py-4 rounded-full flex items-center gap-2 group transition-all">Kostenlos beraten lassen<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span></a>
 </div>
 </div>
-<div class="md:col-span-5 relative">
+<div class="hidden md:block md:col-span-5 relative">
 <div class="aspect-square rounded-2xl overflow-hidden bg-surface-container-low ghost-border p-4">
 <img class="w-full h-full object-cover rounded-xl opacity-80" data-alt="Dynamic abstract visualization of data streams and digital commerce flows in deep purple and obsidian tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_wV77unPLrGc-Vm_rwaRs7Aq8eYGV5fgWx_rkuyjufVwEEGDOjgDzIhkxnwCcmDI1FEL4hsOEjhAGgiZI-h6Z2myrSUZTfo12vqxxZA_vG0spWSnSPnK-a0L9Bj8RTcy1Q9FjcxnW5p72bOYjhkaP0TmFPSNOnDDBS5JYoZv3FhfILAWWjnGyA_W1YXlCje95804B4U5YD5UD3OXheyKoC_IKnfrmNt52OWuY58GxMaClPkYWZBooQHjSzYUCHjz1iLrTr8zbBbi9"/>
 </div>
@@ -311,57 +311,103 @@ document.addEventListener('click', function(e) {
 <a href="/kontakt/" class="kinetic-gradient text-on-surface font-bold px-8 py-4 rounded-full inline-flex items-center gap-2 group transition-all hover:scale-105">Kostenlos beraten lassen<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span></a>
 </div>
 
-<!-- Right: Benefits -->
-<div class="space-y-4">
-
-<div class="bg-surface-container rounded-xl p-6 border border-outline-variant/20 hover:border-primary/30 transition-colors flex items-start gap-5">
-<div class="w-11 h-11 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
-<span class="material-symbols-outlined text-primary">hub</span>
-</div>
+<!-- Right: Benefits – Carousel on Mobile, Stack on Desktop -->
 <div>
-<h3 class="font-headline font-bold text-lg mb-1">Ein Ansprechpartner statt fünf</h3>
-<p class="text-on-surface-variant text-sm leading-relaxed">Kein Abstimmungschaos zwischen verschiedenen Agenturen. Du sprichst mit mir – und ich koordiniere alles andere. Das spart Zeit, Nerven und Missverständnisse.</p>
-</div>
-</div>
 
-<div class="bg-surface-container rounded-xl p-6 border border-outline-variant/20 hover:border-primary/30 transition-colors flex items-start gap-5">
-<div class="w-11 h-11 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
-<span class="material-symbols-outlined text-primary">savings</span>
+<!-- Desktop: stacked list -->
+<div class="hidden md:space-y-4 md:block">
+<div class="bg-surface-container rounded-xl p-6 border border-outline-variant/20 flex items-start gap-5">
+<div class="w-11 h-11 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-0.5"><span class="material-symbols-outlined text-primary">hub</span></div>
+<div><h3 class="font-headline font-bold text-lg mb-1">Ein Ansprechpartner statt fünf</h3><p class="text-on-surface-variant text-sm leading-relaxed">Kein Abstimmungschaos zwischen verschiedenen Agenturen. Du sprichst mit mir – und ich koordiniere alles andere.</p></div>
 </div>
-<div>
-<h3 class="font-headline font-bold text-lg mb-1">Bezahlbarer Einstieg ohne Qualitätsverlust</h3>
-<p class="text-on-surface-variant text-sm leading-relaxed">Grosse Agenturen haben grosse Overheadkosten. Bei mir zahlst Du für Leistung – nicht für Bürofläche und Hierarchien. Das macht professionelles E-Commerce auch für KMU realistisch.</p>
+<div class="bg-surface-container rounded-xl p-6 border border-outline-variant/20 flex items-start gap-5">
+<div class="w-11 h-11 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-0.5"><span class="material-symbols-outlined text-primary">savings</span></div>
+<div><h3 class="font-headline font-bold text-lg mb-1">Bezahlbarer Einstieg ohne Qualitätsverlust</h3><p class="text-on-surface-variant text-sm leading-relaxed">Grosse Agenturen haben grosse Overheadkosten. Bei mir zahlst Du für Leistung – nicht für Hierarchien.</p></div>
 </div>
+<div class="bg-surface-container rounded-xl p-6 border border-outline-variant/20 flex items-start gap-5">
+<div class="w-11 h-11 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-0.5"><span class="material-symbols-outlined text-primary">account_tree</span></div>
+<div><h3 class="font-headline font-bold text-lg mb-1">Strategie die wirklich zusammenhängt</h3><p class="text-on-surface-variant text-sm leading-relaxed">SEO, Social Media und Website müssen sich gegenseitig stärken – ich denke alle Kanäle zusammen.</p></div>
 </div>
-
-<div class="bg-surface-container rounded-xl p-6 border border-outline-variant/20 hover:border-primary/30 transition-colors flex items-start gap-5">
-<div class="w-11 h-11 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
-<span class="material-symbols-outlined text-primary">account_tree</span>
+<div class="bg-surface-container rounded-xl p-6 border border-outline-variant/20 flex items-start gap-5">
+<div class="w-11 h-11 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-0.5"><span class="material-symbols-outlined text-primary">groups</span></div>
+<div><h3 class="font-headline font-bold text-lg mb-1">Partnernetzwerk für echte Expertise</h3><p class="text-on-surface-variant text-sm leading-relaxed">Wo Spezialisten sinnvoll sind bringe ich erfahrene Partner mit – geprüft und direkt eingebunden.</p></div>
 </div>
-<div>
-<h3 class="font-headline font-bold text-lg mb-1">Strategie die wirklich zusammenhängt</h3>
-<p class="text-on-surface-variant text-sm leading-relaxed">SEO, Social Media und Website müssen sich gegenseitig stärken – nicht unabhängig voneinander existieren. Als Full-Service Partner denke ich alle Kanäle zusammen.</p>
+<div class="bg-surface-container rounded-xl p-6 border border-outline-variant/20 flex items-start gap-5">
+<div class="w-11 h-11 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-0.5"><span class="material-symbols-outlined text-primary">rocket_launch</span></div>
+<div><h3 class="font-headline font-bold text-lg mb-1">Vom ersten Gespräch bis zum fertigen Setup</h3><p class="text-on-surface-variant text-sm leading-relaxed">Ich begleite Dich vom ersten Briefing bis zum live gegangenen Shop – kein Projekt das hängenbleibt.</p></div>
 </div>
 </div>
 
-<div class="bg-surface-container rounded-xl p-6 border border-outline-variant/20 hover:border-primary/30 transition-colors flex items-start gap-5">
-<div class="w-11 h-11 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
-<span class="material-symbols-outlined text-primary">groups</span>
+<!-- Mobile: Swipe Carousel -->
+<div class="md:hidden">
+<div class="overflow-hidden relative" id="benefit-carousel-wrapper">
+<div class="flex transition-transform duration-300 ease-in-out" id="benefit-carousel">
+<div class="min-w-full px-1">
+<div class="bg-surface-container rounded-2xl p-6 border border-primary/30 h-full">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4"><span class="material-symbols-outlined text-primary">hub</span></div>
+<h3 class="font-headline font-bold text-lg mb-2">Ein Ansprechpartner statt fünf</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Kein Abstimmungschaos. Du sprichst mit mir – ich koordiniere alles andere. Das spart Zeit, Nerven und Geld.</p>
 </div>
-<div>
-<h3 class="font-headline font-bold text-lg mb-1">Partnernetzwerk für echte Expertise</h3>
-<p class="text-on-surface-variant text-sm leading-relaxed">Wo Spezialisten sinnvoll sind – etwa für Social Media oder Design – bringe ich erfahrene Partner mit. Geprüft und direkt in meine Strategie eingebunden.</p>
+</div>
+<div class="min-w-full px-1">
+<div class="bg-surface-container rounded-2xl p-6 border border-primary/30 h-full">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4"><span class="material-symbols-outlined text-primary">savings</span></div>
+<h3 class="font-headline font-bold text-lg mb-2">Bezahlbar ohne Qualitätsverlust</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Keine Overheadkosten wie bei grossen Agenturen. Du zahlst für Leistung – das macht professionelles E-Commerce für KMU realistisch.</p>
 </div>
 </div>
-
-<div class="bg-surface-container rounded-xl p-6 border border-outline-variant/20 hover:border-primary/30 transition-colors flex items-start gap-5">
-<div class="w-11 h-11 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
-<span class="material-symbols-outlined text-primary">rocket_launch</span>
+<div class="min-w-full px-1">
+<div class="bg-surface-container rounded-2xl p-6 border border-primary/30 h-full">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4"><span class="material-symbols-outlined text-primary">account_tree</span></div>
+<h3 class="font-headline font-bold text-lg mb-2">Strategie die zusammenhängt</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">SEO, Website und Social Media stärken sich gegenseitig. Ich denke alle Kanäle zusammen statt isoliert.</p>
 </div>
-<div>
-<h3 class="font-headline font-bold text-lg mb-1">Vom ersten Gespräch bis zum fertigen Setup</h3>
-<p class="text-on-surface-variant text-sm leading-relaxed">Ich begleite Dich vom ersten Briefing bis zum live gegangenen Shop – und darüber hinaus. Kein Übergabechaos, kein Projekt das irgendwo hängenbleibt.</p>
 </div>
+<div class="min-w-full px-1">
+<div class="bg-surface-container rounded-2xl p-6 border border-primary/30 h-full">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4"><span class="material-symbols-outlined text-primary">groups</span></div>
+<h3 class="font-headline font-bold text-lg mb-2">Partnernetzwerk für Expertise</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Wo Spezialisten sinnvoll sind bringe ich erfahrene Partner mit – direkt in meine Strategie eingebunden.</p>
+</div>
+</div>
+<div class="min-w-full px-1">
+<div class="bg-surface-container rounded-2xl p-6 border border-primary/30 h-full">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4"><span class="material-symbols-outlined text-primary">rocket_launch</span></div>
+<h3 class="font-headline font-bold text-lg mb-2">Von Anfang bis Launch</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Ich begleite Dich vom ersten Gespräch bis zum live gegangenen Shop – und darüber hinaus.</p>
+</div>
+</div>
+</div>
+<!-- Dots -->
+<div class="flex justify-center gap-2 mt-4" id="benefit-dots">
+<button onclick="goBenefit(0)" class="w-6 h-1.5 rounded-full bg-primary transition-all benefit-dot"></button>
+<button onclick="goBenefit(1)" class="w-2 h-1.5 rounded-full bg-outline-variant/50 transition-all benefit-dot"></button>
+<button onclick="goBenefit(2)" class="w-2 h-1.5 rounded-full bg-outline-variant/50 transition-all benefit-dot"></button>
+<button onclick="goBenefit(3)" class="w-2 h-1.5 rounded-full bg-outline-variant/50 transition-all benefit-dot"></button>
+<button onclick="goBenefit(4)" class="w-2 h-1.5 rounded-full bg-outline-variant/50 transition-all benefit-dot"></button>
+</div>
+</div>
+<script>
+let bc=0;
+function goBenefit(i){
+  bc=i;
+  document.getElementById('benefit-carousel').style.transform='translateX(-'+i*100+'%)';
+  document.querySelectorAll('.benefit-dot').forEach((d,idx)=>{
+    d.classList.toggle('bg-primary',idx===i);
+    d.classList.toggle('w-6',idx===i);
+    d.classList.toggle('bg-outline-variant/50',idx!==i);
+    d.classList.toggle('w-2',idx!==i);
+  });
+}
+// Touch swipe
+const cw=document.getElementById('benefit-carousel-wrapper');
+let startX=0;
+cw.addEventListener('touchstart',e=>{startX=e.touches[0].clientX;});
+cw.addEventListener('touchend',e=>{
+  const diff=startX-e.changedTouches[0].clientX;
+  if(Math.abs(diff)>40){goBenefit(diff>0?Math.min(bc+1,4):Math.max(bc-1,0));}
+});
+</script>
 </div>
 
 </div>
@@ -442,7 +488,7 @@ document.addEventListener('click', function(e) {
 ALLE LEISTUNGEN <span class="material-symbols-outlined group-hover:ml-2 transition-all">north_east</span>
 </a>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+<div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4">
 <a href="/seo/" class="bg-surface-container-highest rounded-xl p-6 border border-outline-variant/20 hover:bg-surface-variant hover:border-primary/40 transition-colors duration-300 block group">
 <span class="material-symbols-outlined text-primary text-3xl mb-4 block">search</span>
 <h3 class="font-headline text-lg font-bold mb-2 group-hover:text-primary transition-colors">SEO-Optimierung</h3>
