@@ -82,6 +82,7 @@ tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-surface":"#fafdfe",
 <a href="/geo/" class="block px-4 py-2.5 text-sm text-[#fafdfe] opacity-70 hover:text-[#cf96ff] hover:opacity-100 rounded-lg transition-colors">GEO-Optimierung</a>
 <a href="/conversion-rate-optimierung/" class="block px-4 py-2.5 text-sm text-[#fafdfe] opacity-70 hover:text-[#cf96ff] hover:opacity-100 rounded-lg transition-colors">Conversion-Optimierung</a>
 <a href="/ux-ui/" class="block px-4 py-2.5 text-sm text-[#fafdfe] opacity-70 hover:text-[#cf96ff] hover:opacity-100 rounded-lg transition-colors">UX/UI Design</a>
+<a href="/ux-ui/" class="block px-4 py-2.5 text-sm text-[#fafdfe] opacity-70 hover:text-[#cf96ff] hover:opacity-100 rounded-lg transition-colors">UX/UI Design</a><a href="/webseiten-erstellen/" class="block px-4 py-2.5 text-sm text-[#fafdfe] opacity-70 hover:text-[#cf96ff] hover:opacity-100 rounded-lg transition-colors">Webseiten & Onlineshop erstellen</a>
 <a href="/webseiten-erstellen/" class="block px-4 py-2.5 text-sm text-[#fafdfe] opacity-70 hover:text-[#cf96ff] hover:opacity-100 rounded-lg transition-colors">Webseiten & Onlineshop erstellen</a>
 <a href="/kundenbindung/" class="block px-4 py-2.5 text-sm text-[#fafdfe] opacity-70 hover:text-[#cf96ff] hover:opacity-100 rounded-lg transition-colors">Kundenbindung & Retention</a>
 <a href="/ai-tools/" class="block px-4 py-2.5 text-sm text-[#fafdfe] opacity-70 hover:text-[#cf96ff] hover:opacity-100 rounded-lg transition-colors">AI-Tools & Automationen</a>
@@ -220,110 +221,178 @@ document.addEventListener('click', function(e) {
 </div>
 </div>
 </section>
-<!-- USP Slider Carousel -->
-<section class="py-8 md:py-20 bg-surface-container-lowest border-y border-outline-variant/10 relative overflow-hidden">
-<div class="max-w-7xl mx-auto px-8 relative z-10">
-<div class="relative overflow-hidden group">
-<div class="usp-slider-container" id="usp-slider">
-<!-- Slide 1 -->
-<div class="min-w-full flex flex-col md:flex-row items-center gap-12 px-4 md:px-16">
-<div class="w-24 h-24 md:w-32 md:h-32 rounded-2xl bg-surface-container-high flex items-center justify-center shrink-0 ghost-border relative">
-<span class="material-symbols-outlined text-5xl text-primary" style="font-variation-settings: 'FILL' 1;">price_check</span>
-<div class="absolute -inset-1 kinetic-gradient opacity-10 blur-xl -z-10"></div>
-</div>
-<div class="text-center md:text-left">
-<span class="text-primary font-label text-xs font-bold tracking-widest mb-2 block">FREELANCER · EIGENE AGENTUR · DIREKT</span>
-<h3 class="text-2xl md:text-4xl font-extrabold font-headline leading-tight">Kein Umweg über ein grosses Team – Du arbeitest direkt mit mir.</h3>
-</div>
-</div>
-<!-- Slide 2 -->
-<div class="min-w-full flex flex-col md:flex-row items-center gap-12 px-4 md:px-16">
-<div class="w-24 h-24 md:w-32 md:h-32 rounded-2xl bg-surface-container-high flex items-center justify-center shrink-0 ghost-border relative">
-<span class="material-symbols-outlined text-5xl text-primary" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
-<div class="absolute -inset-1 kinetic-gradient opacity-10 blur-xl -z-10"></div>
-</div>
-<div class="text-center md:text-left">
-<span class="text-primary font-label text-xs font-bold tracking-widest mb-2 block">ERFAHRUNG · STARTUP BIS GLOBAL</span>
-<h3 class="text-2xl md:text-4xl font-extrabold font-headline leading-tight">Mehrere Onlineshops begleitet – vom Start bis zur Internationalisierung.</h3>
-</div>
-</div>
-<!-- Slide 3 -->
-<div class="min-w-full flex flex-col md:flex-row items-center gap-12 px-4 md:px-16">
-<div class="w-24 h-24 md:w-32 md:h-32 rounded-2xl bg-surface-container-high flex items-center justify-center shrink-0 ghost-border relative">
-<span class="material-symbols-outlined text-5xl text-primary" style="font-variation-settings: 'FILL' 1;">alternate_email</span>
-<div class="absolute -inset-1 kinetic-gradient opacity-10 blur-xl -z-10"></div>
-</div>
-<div class="text-center md:text-left">
-<span class="text-primary font-label text-xs font-bold tracking-widest mb-2 block">DIREKT & UNKOMPLIZIERT</span>
-<h3 class="text-2xl md:text-4xl font-extrabold font-headline leading-tight">Schreib mich an – unverbindlich. Ich antworte innerhalb von 24 Stunden.</h3>
-</div>
-</div>
-</div>
-<!-- Navigation Arrows -->
-<button class="absolute left-0 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-surface-container-high border border-outline-variant/30 flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all opacity-0 group-hover:opacity-100 hidden md:flex" id="prev-usp">
-<span class="material-symbols-outlined">chevron_left</span>
-</button>
-<button class="absolute right-0 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-surface-container-high border border-outline-variant/30 flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all opacity-0 group-hover:opacity-100 hidden md:flex" id="next-usp">
-<span class="material-symbols-outlined">chevron_right</span>
-</button>
-<!-- Dot Navigation -->
-<div class="flex justify-center gap-3 mt-6">
-<button class="usp-dot w-2 h-2 rounded-full bg-primary transition-all" onclick="goToSlide(0)"></button>
-<button class="usp-dot w-2 h-2 rounded-full bg-outline-variant/50 transition-all" onclick="goToSlide(1)"></button>
-<button class="usp-dot w-2 h-2 rounded-full bg-outline-variant/50 transition-all" onclick="goToSlide(2)"></button>
-</div>
-</div>
-</div>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-                let currentSlide = 0;
-                const slider = document.getElementById('usp-slider');
-                const dots = document.querySelectorAll('.usp-dot');
-                const nextBtn = document.getElementById('next-usp');
-                const prevBtn = document.getElementById('prev-usp');
 
-                function updateSlider() {
-                    slider.style.transform = `translateX(-${currentSlide * 100}%)`;
-                    dots.forEach((dot, index) => {
-                        if (index === currentSlide) {
-                            dot.classList.add('bg-primary', 'w-8');
-                            dot.classList.remove('bg-outline-variant/50', 'w-2');
-                        } else {
-                            dot.classList.remove('bg-primary', 'w-8');
-                            dot.classList.add('bg-outline-variant/50', 'w-2');
-                        }
-                    });
-                }
 
-                function goToSlide(index) {
-                    currentSlide = index;
-                    updateSlider();
-                }
+<!-- Why Choose Us -->
+<section class="py-10 md:py-16 bg-surface">
+<div class="max-w-7xl mx-auto px-6 md:px-8">
 
-                nextBtn?.addEventListener('click', () => {
-                    currentSlide = (currentSlide + 1) % 3;
-                    updateSlider();
-                });
+<h2 class="text-2xl md:text-4xl font-extrabold font-headline tracking-tight mb-6 md:mb-8">Warum Schweizer Marken auf mich setzen</h2>
 
-                prevBtn?.addEventListener('click', () => {
-                    currentSlide = (currentSlide - 1 + 3) % 3;
-                    updateSlider();
-                });
+<!-- Stats: 2x2 grid -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6 md:mb-10">
+<div class="bg-primary rounded-xl p-4 md:p-5 text-center">
+<div class="text-3xl md:text-4xl font-black text-white font-headline mb-1">100+</div>
+<div class="text-xs font-label uppercase tracking-wider text-white opacity-80">Keywords Platz 1</div>
+</div>
+<div class="bg-primary rounded-xl p-4 md:p-5 text-center">
+<div class="text-3xl md:text-4xl font-black text-white font-headline mb-1">8+</div>
+<div class="text-xs font-label uppercase tracking-wider text-white opacity-80">Optimierte Shops</div>
+</div>
+<div class="bg-primary rounded-xl p-4 md:p-5 text-center">
+<div class="text-3xl md:text-4xl font-black text-white font-headline mb-1">+110%</div>
+<div class="text-xs font-label uppercase tracking-wider text-white opacity-80">Traffic GEO</div>
+</div>
+<div class="bg-primary rounded-xl p-4 md:p-5 text-center">
+<div class="text-3xl md:text-4xl font-black text-white font-headline mb-1">1:1</div>
+<div class="text-xs font-label uppercase tracking-wider text-white opacity-80">Direkt mit mir</div>
+</div>
+</div>
 
-                // Auto-rotate every 10 seconds
-                setInterval(() => {
-                    currentSlide = (currentSlide + 1) % 3;
-                    updateSlider();
-                }, 10000);
+<!-- Desktop: 3 cards side by side -->
+<div class="hidden md:grid md:grid-cols-3 gap-6">
+<div class="bg-surface-container rounded-xl p-6 border border-outline-variant/20">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-primary">verified_user</span>
+</div>
+<h4 class="text-lg font-bold font-headline mb-2">Bewährte E-Commerce-Expertise</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Über 4 Jahre Praxis als E-Commerce Manager – immer nah am Markt, immer nah an den Trends.</p>
+</div>
+<div class="bg-surface-container rounded-xl p-6 border border-outline-variant/20">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-primary">monitoring</span>
+</div>
+<h4 class="text-lg font-bold font-headline mb-2">Resultate statt Berichte</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Ich messe mich an Deinem Umsatz, nicht an Präsentationen. Meine KPIs sind mit Deinem Erfolg verknüpft.</p>
+</div>
+<div class="bg-surface-container rounded-xl p-6 border border-outline-variant/20">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-primary">hub</span>
+</div>
+<h4 class="text-lg font-bold font-headline mb-2">Shopify-Expertise & Know-how</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Shopify ist meine Kernkompetenz – kombiniert mit AI-Tools und Automationen für echten Mehrwert.</p>
+</div>
+</div>
 
-                // Initial state
-                updateSlider();
-            </script>
+<!-- Mobile: Carousel -->
+<div class="md:hidden">
+<div class="overflow-hidden" id="why-carousel-wrapper">
+<div class="flex transition-transform duration-300 ease-in-out" id="why-carousel">
+<div class="min-w-full px-1">
+<div class="bg-surface-container rounded-2xl p-5 border border-primary/30">
+<div class="w-11 h-11 rounded-full bg-primary/10 flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-primary">verified_user</span>
+</div>
+<h4 class="font-bold font-headline text-base mb-2">Bewährte E-Commerce-Expertise</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Über 4 Jahre Praxis als E-Commerce Manager – immer nah am Markt und an den Trends.</p>
+</div>
+</div>
+<div class="min-w-full px-1">
+<div class="bg-surface-container rounded-2xl p-5 border border-primary/30">
+<div class="w-11 h-11 rounded-full bg-primary/10 flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-primary">monitoring</span>
+</div>
+<h4 class="font-bold font-headline text-base mb-2">Resultate statt Berichte</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Ich messe mich an Deinem Umsatz. Meine KPIs sind direkt mit Deinem Geschäftserfolg verknüpft.</p>
+</div>
+</div>
+<div class="min-w-full px-1">
+<div class="bg-surface-container rounded-2xl p-5 border border-primary/30">
+<div class="w-11 h-11 rounded-full bg-primary/10 flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-primary">hub</span>
+</div>
+<h4 class="font-bold font-headline text-base mb-2">Shopify-Expertise & Know-how</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Shopify ist meine Kernkompetenz – mit AI-Tools und Automationen für echten technischen Mehrwert.</p>
+</div>
+</div>
+</div>
+<div class="flex justify-center gap-2 mt-4" id="why-dots">
+<button onclick="goWhy(0)" class="w-6 h-1.5 rounded-full bg-primary transition-all why-dot"></button>
+<button onclick="goWhy(1)" class="w-2 h-1.5 rounded-full bg-outline-variant/50 transition-all why-dot"></button>
+<button onclick="goWhy(2)" class="w-2 h-1.5 rounded-full bg-outline-variant/50 transition-all why-dot"></button>
+</div>
+</div>
+<script>
+let wc=0;
+function goWhy(i){wc=i;document.getElementById('why-carousel').style.transform='translateX(-'+i*100+'%)';document.querySelectorAll('.why-dot').forEach((d,idx)=>{d.classList.toggle('bg-primary',idx===i);d.classList.toggle('w-6',idx===i);d.classList.toggle('bg-outline-variant/50',idx!==i);d.classList.toggle('w-2',idx!==i);});}
+const wcw=document.getElementById('why-carousel-wrapper');
+let wsx=0;
+wcw.addEventListener('touchstart',e=>{wsx=e.touches[0].clientX;});
+wcw.addEventListener('touchend',e=>{const d=wsx-e.changedTouches[0].clientX;if(Math.abs(d)>40){goWhy(d>0?Math.min(wc+1,2):Math.max(wc-1,0));}});
+</script>
+</div>
+
+</div>
+</section>
+
+<!-- Project Carousel -->
+<section class="py-8 md:py-16 bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto px-6 md:px-8">
+<div class="flex items-center justify-between mb-6 md:mb-10">
+<h2 class="text-xl md:text-3xl font-extrabold font-headline tracking-tight">Meine Projekte</h2>
+<a href="/projekte/" class="text-primary font-label font-bold text-sm hover:underline flex items-center gap-1">Alle ansehen →</a>
+</div>
+
+<!-- Carousel wrapper -->
+<div class="overflow-hidden" id="proj-carousel-wrapper">
+<div class="flex transition-transform duration-300 ease-in-out" id="proj-carousel">
+
+<!-- Slide 1: Holzdesign Louis -->
+<div class="min-w-full md:min-w-[50%] px-2">
+<div class="bg-surface-container rounded-2xl border border-outline-variant/20 hover:border-primary/30 transition-colors p-6 md:p-8 h-full">
+<div class="flex items-center gap-4 mb-4">
+<div class="bg-white rounded-xl p-2 flex items-center justify-center w-16 h-12 shrink-0 overflow-hidden">
+<img src="/holzdesign-louis-logo.png" alt="Holzdesign Louis" class="w-full h-full object-contain"/>
+</div>
+<div>
+<h3 class="font-headline font-bold text-lg">Holzdesign Louis</h3>
+<a href="https://www.holzdesign-louis.ch" target="_blank" rel="noopener" class="text-primary text-xs hover:underline">www.holzdesign-louis.ch</a>
+</div>
+</div>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-4">Professionelle Webseite mit CMS – selbständig pflegbar. Hosting und CMS sind komplett kostenlos, keine laufenden Kosten.</p>
+<div class="flex flex-wrap gap-2">
+<span class="bg-primary/20 text-primary border border-primary/30 px-3 py-1 rounded-full text-xs font-label uppercase tracking-widest">Webseite erstellt</span>
+<span class="bg-primary/20 text-primary border border-primary/30 px-3 py-1 rounded-full text-xs font-label uppercase tracking-widest">CMS</span>
+<span class="bg-primary/20 text-primary border border-primary/30 px-3 py-1 rounded-full text-xs font-label uppercase tracking-widest">SEO in Planung</span>
+</div>
+</div>
+</div>
+
+<!-- Slide 2: Weitere Projekte placeholder -->
+<div class="min-w-full md:min-w-[50%] px-2">
+<div class="bg-surface-container rounded-2xl border border-dashed border-outline-variant/40 p-6 md:p-8 h-full flex flex-col items-center justify-center text-center min-h-[220px]">
+<span class="material-symbols-outlined text-primary text-4xl mb-3">add_circle</span>
+<h3 class="font-headline font-bold text-lg mb-2">Dein Projekt</h3>
+<p class="text-on-surface-variant text-sm mb-4">Werde das nächste Erfolgsbeispiel von e-commotion.</p>
+<a href="/kontakt/" class="kinetic-gradient text-white font-bold px-5 py-2 rounded-full text-sm">JETZT ANFRAGEN</a>
+</div>
+</div>
+
+</div>
+
+<!-- Dots -->
+<div class="flex justify-center gap-2 mt-5" id="proj-dots">
+<button onclick="goProj(0)" class="w-6 h-1.5 rounded-full bg-primary transition-all proj-dot"></button>
+<button onclick="goProj(1)" class="w-2 h-1.5 rounded-full bg-outline-variant/50 transition-all proj-dot"></button>
+</div>
+</div>
+
+<script>
+let pc=0;
+const ptotal=2;
+function goProj(i){pc=i;document.getElementById('proj-carousel').style.transform='translateX(-'+i*100+'%)';document.querySelectorAll('.proj-dot').forEach((d,idx)=>{d.classList.toggle('bg-primary',idx===i);d.classList.toggle('w-6',idx===i);d.classList.toggle('bg-outline-variant/50',idx!==i);d.classList.toggle('w-2',idx!==i);});}
+const pw=document.getElementById('proj-carousel-wrapper');
+let psx=0;
+pw.addEventListener('touchstart',e=>{psx=e.touches[0].clientX;});
+pw.addEventListener('touchend',e=>{const d=psx-e.changedTouches[0].clientX;if(Math.abs(d)>40){goProj(d>0?Math.min(pc+1,ptotal-1):Math.max(pc-1,0));}});
+</script>
+</div>
 </section>
 
 <!-- Full-Service Section -->
-<section class="py-10 md:py-24 bg-surface-container-low">
+<section class="py-8 md:py-16 bg-surface-container-low">
 <div class="max-w-7xl mx-auto px-8">
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 items-start">
 
 <!-- Left: Text -->
 <div>
@@ -441,68 +510,10 @@ cw.addEventListener('touchend',e=>{
 </div>
 </div>
 </section>
-
-<!-- Why Choose Us - Asymmetric Layout -->
-<section class="py-10 md:py-32 bg-surface">
-<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-16">
-<div class="lg:col-span-5">
-<h2 class="text-2xl md:text-4xl font-extrabold font-headline tracking-tight mb-6">Warum Schweizer Marken auf mich setzen</h2>
-<div class="space-y-12">
-<div class="flex gap-6">
-<div class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-primary">verified_user</span>
-</div>
-<div>
-<h4 class="text-xl font-bold font-headline mb-2">Bewährte E-Commerce Expertise</h4>
-<p class="hidden md:block text-on-surface-variant leading-relaxed">Über 4 Jahre Praxis als E-Commerce Manager in einem dynamischen, schnellwachsenden Unternehmen – immer nah am Markt, immer nah an den Trends.</p>
-</div>
-</div>
-<div class="flex gap-6">
-<div class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-primary">monitoring</span>
-</div>
-<div>
-<h4 class="text-xl font-bold font-headline mb-2">Resultate statt Berichte</h4>
-<p class="hidden md:block text-on-surface-variant leading-relaxed">Ich messe mich an Deinem Umsatz, nicht an Präsentationen. Meine KPIs sind direkt mit Deinem Geschäftserfolg verknüpft.</p>
-</div>
-</div>
-<div class="flex gap-6">
-<div class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-primary">hub</span>
-</div>
-<div>
-<h4 class="text-xl font-bold font-headline mb-2">Shopify-Expertise & Plattform Know-how</h4>
-<p class="hidden md:block text-on-surface-variant leading-relaxed">Shopify ist meine Kernkompetenz – ich kenne aber auch andere Systeme. Kombiniert mit fundiertem Wissen in AI-Tools und Automationen bringe ich Dir echten technischen Mehrwert.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="lg:col-span-7 flex items-center">
-<div class="grid grid-cols-2 md:grid-cols-4 gap-3 w-full">
-<div class="bg-primary rounded-xl p-5 text-center">
-<div class="text-3xl md:text-4xl font-black text-on-primary font-headline mb-1">100+</div>
-<div class="text-xs font-label uppercase tracking-wider text-on-primary">Keywords Platz 1</div>
-</div>
-<div class="bg-primary rounded-xl p-5 text-center">
-<div class="text-3xl md:text-4xl font-black text-on-primary font-headline mb-1">8+</div>
-<div class="text-xs font-label uppercase tracking-wider text-on-primary">Optimierte Shops</div>
-</div>
-<div class="bg-primary rounded-xl p-5 text-center">
-<div class="text-3xl md:text-4xl font-black text-on-primary font-headline mb-1">+110%</div>
-<div class="text-xs font-label uppercase tracking-wider text-on-primary">Traffic GEO</div>
-</div>
-<div class="bg-primary rounded-xl p-5 text-center">
-<div class="text-3xl md:text-4xl font-black text-on-primary font-headline mb-1">1:1</div>
-<div class="text-xs font-label uppercase tracking-wider text-on-primary">Direkt mit mir</div>
-</div>
-</div>
-</div>
-</div>
-</section>
 <!-- Core Services - Teaser Grid -->
-<section class="py-32 bg-surface-container-low relative">
+<section class="py-10 md:py-16 bg-surface-container-low relative">
 <div class="max-w-7xl mx-auto px-8">
-<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-8 gap-4">
 <div class="max-w-2xl">
 <h2 class="text-xl md:text-4xl font-extrabold font-headline tracking-tight mb-4">Meine Dienstleistungen im Überblick.</h2>
 <p class="text-on-surface-variant">Von SEO über Social Media bis zur Kundenbindung – ein Überblick. Alle Details auf der Dienstleistungsseite.</p>
@@ -530,10 +541,10 @@ ALLE DIENSTLEISTUNGEN <span class="material-symbols-outlined group-hover:ml-2 tr
 <p class="hidden md:block text-on-surface-variant text-sm leading-relaxed">Mehr Käufer aus dem gleichen Traffic durch gezielte Optimierungen.</p>
 <span class="hidden md:flex text-primary text-xs font-label mt-3 items-center gap-1">Mehr erfahren →</span>
 </a>
-<a href="/ux-ui/" class="bg-surface-container-highest rounded-xl p-4 md:p-6 border border-outline-variant/20 hover:bg-surface-variant hover:border-primary/40 transition-colors duration-300 block group">
-<span class="material-symbols-outlined text-primary text-2xl md:text-3xl mb-2 md:mb-4 block">palette</span>
-<h3 class="font-headline text-sm md:text-lg font-bold mb-1 md:mb-2 group-hover:text-primary transition-colors">UX/UI Design</h3>
-<p class="hidden md:block text-on-surface-variant text-sm leading-relaxed">Shops die nicht nur gut aussehen, sondern auch konvertieren.</p>
+<a href="/webseiten-erstellen/" class="bg-surface-container-highest rounded-xl p-4 md:p-6 border border-outline-variant/20 hover:bg-surface-variant hover:border-primary/40 transition-colors duration-300 block group">
+<span class="material-symbols-outlined text-primary text-2xl md:text-3xl mb-2 md:mb-4 block">web</span>
+<h3 class="font-headline text-sm md:text-lg font-bold mb-1 md:mb-2 group-hover:text-primary transition-colors">Webseiten & Onlineshop Erstellung</h3>
+<p class="hidden md:block text-on-surface-variant text-sm leading-relaxed">Professionelle Webseiten und Onlineshops von Grund auf – SEO-optimiert, mobilfreundlich und auf Deine Ziele ausgerichtet.</p>
 <span class="hidden md:flex text-primary text-xs font-label mt-3 items-center gap-1">Mehr erfahren →</span>
 </a>
 <a href="/kundenbindung/" class="bg-surface-container-highest rounded-xl p-4 md:p-6 border border-outline-variant/20 hover:bg-surface-variant hover:border-primary/40 transition-colors duration-300 block group">
@@ -554,17 +565,17 @@ ALLE DIENSTLEISTUNGEN <span class="material-symbols-outlined group-hover:ml-2 tr
 <p class="hidden md:block text-on-surface-variant text-sm leading-relaxed">Professionell auf Instagram, TikTok, LinkedIn, Pinterest und weiteren Kanälen – mit einem erfahrenen Partner-Experten im Social Media Bereich.</p>
 <span class="hidden md:flex text-primary text-xs font-label mt-3 items-center gap-1">Mehr erfahren →</span>
 </a>
-<a href="/webseiten-erstellen/" class="bg-surface-container-highest rounded-xl p-4 md:p-6 border border-outline-variant/20 hover:bg-surface-variant hover:border-primary/40 transition-colors duration-300 block group">
-<span class="material-symbols-outlined text-primary text-2xl md:text-3xl mb-2 md:mb-4 block">web</span>
-<h3 class="font-headline text-sm md:text-lg font-bold mb-1 md:mb-2 group-hover:text-primary transition-colors">Webseiten & Onlineshop Erstellung</h3>
-<p class="hidden md:block text-on-surface-variant text-sm leading-relaxed">Professionelle Webseiten und Onlineshops von Grund auf – SEO-optimiert, mobilfreundlich und auf Deine Ziele ausgerichtet.</p>
+<a href="/ux-ui/" class="bg-surface-container-highest rounded-xl p-4 md:p-6 border border-outline-variant/20 hover:bg-surface-variant hover:border-primary/40 transition-colors duration-300 block group">
+<span class="material-symbols-outlined text-primary text-2xl md:text-3xl mb-2 md:mb-4 block">palette</span>
+<h3 class="font-headline text-sm md:text-lg font-bold mb-1 md:mb-2 group-hover:text-primary transition-colors">UX/UI Design</h3>
+<p class="hidden md:block text-on-surface-variant text-sm leading-relaxed">Shops die nicht nur gut aussehen, sondern auch konvertieren.</p>
 <span class="hidden md:flex text-primary text-xs font-label mt-3 items-center gap-1">Mehr erfahren →</span>
 </a>
 </div>
 </div>
 </section>
 <!-- Final CTA Section -->
-<section class="py-12 md:py-24 relative overflow-hidden">
+<section class="py-10 md:py-16 relative overflow-hidden">
 <div class="max-w-5xl mx-auto px-8 text-center relative z-10">
 <h2 class="text-2xl md:text-6xl font-extrabold font-headline tracking-tighter mb-6">Bereit, Deinen Shop auf das nächste Level zu heben?</h2>
 <p class="hidden md:block text-xl text-on-surface-variant mb-12 max-w-2xl mx-auto leading-relaxed">Lass uns gemeinsam herausfinden wo der grösste Hebel in Deinem Shop liegt und wie ich Dir helfen kann dauerhaft zu wachsen.</p>
