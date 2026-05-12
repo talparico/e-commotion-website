@@ -220,8 +220,43 @@ Echte Projekte, messbare Resultate. Hier findest Du eine Auswahl meiner Arbeiten
 <!-- Description -->
 <p class="text-on-surface-variant leading-relaxed mb-8 max-w-4xl">Für Holzdesign Louis habe ich eine professionelle Webseite von Grund auf aufgebaut und ein CMS integriert damit der Kunde seine Inhalte selbständig pflegen kann – ohne technisches Vorwissen. Das Hosting läuft über GitHub Pages, das CMS ist kostenlos und vollständig eingerichtet. Der Betrieb der Webseite und des CMS ist für den Kunden komplett kostenlos – keine laufenden Kosten. Als nächsten Schritt werden wir gemeinsam SEO und GEO-Optimierung angehen um die Webseite auch bei Google nachhaltig sichtbar zu machen.</p>
 
-<!-- 3 Kacheln -->
-<div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+<!-- Mobile carousel -->
+<div class="md:hidden overflow-hidden mb-6" id="cardA-wrapper">
+<div class="flex transition-transform duration-300" id="cardA-carousel">
+<div class="min-w-full px-1">
+<div class="bg-surface-container-high rounded-xl p-5 border border-outline-variant/20 h-full">
+<span class="material-symbols-outlined text-primary mb-3 block">language</span>
+<h3 class="font-headline font-bold mb-1">Webseite erstellt</h3>
+<p class="text-on-surface-variant text-sm">Professionelle Webseite von Grund auf – mobiloptimiert, schnell und auf das Handwerk abgestimmt.</p>
+</div>
+</div>
+<div class="min-w-full px-1">
+<div class="bg-surface-container-high rounded-xl p-5 border border-outline-variant/20 h-full">
+<span class="material-symbols-outlined text-primary mb-3 block">edit_note</span>
+<h3 class="font-headline font-bold mb-1">CMS angebunden</h3>
+<p class="text-on-surface-variant text-sm">Der Kunde pflegt Inhalte selbständig – ohne Programmierkenntnisse und ohne Abhängigkeit.</p>
+</div>
+</div>
+<div class="min-w-full px-1">
+<div class="bg-surface-container-high rounded-xl p-5 border border-outline-variant/20 h-full">
+<span class="material-symbols-outlined text-primary mb-3 block">savings</span>
+<h3 class="font-headline font-bold mb-1">Minimale Kosten</h3>
+<p class="text-on-surface-variant text-sm">Hosting via GitHub Pages und CMS sind komplett kostenlos – keine laufenden Kosten.</p>
+</div>
+</div>
+</div>
+<div class="flex justify-center gap-2 mt-3"><button onclick="goCardA(0)" class="w-6 h-1.5 rounded-full bg-primary transition-all cardA-dot"></button><button onclick="goCardA(1)" class="w-2 h-1.5 rounded-full bg-outline-variant/50 transition-all cardA-dot"></button><button onclick="goCardA(2)" class="w-2 h-1.5 rounded-full bg-outline-variant/50 transition-all cardA-dot"></button></div>
+</div>
+<script>
+let ccA=0;
+function goCardA(i){ccA=i;document.getElementById('cardA-carousel').style.transform='translateX(-'+i*100+'%)';document.querySelectorAll('.cardA-dot').forEach((d,idx)=>{d.classList.toggle('bg-primary',idx===i);d.classList.toggle('w-6',idx===i);d.classList.toggle('bg-outline-variant/50',idx!==i);d.classList.toggle('w-2',idx!==i);});}
+const cwA=document.getElementById('cardA-wrapper');
+let csA=0;
+cwA.addEventListener('touchstart',e=>{csA=e.touches[0].clientX;});
+cwA.addEventListener('touchend',e=>{const d=csA-e.changedTouches[0].clientX;if(Math.abs(d)>40){goCardA(d>0?Math.min(ccA+1,2):Math.max(ccA-1,0));}});
+</script>
+<!-- Desktop grid -->
+<div class="hidden md:grid md:grid-cols-3 gap-4 mb-6">
 <div class="bg-surface-container-high rounded-xl p-5 border border-outline-variant/20">
 <span class="material-symbols-outlined text-primary mb-3 block">language</span>
 <h3 class="font-headline font-bold mb-1">Webseite erstellt</h3>
@@ -238,8 +273,6 @@ Echte Projekte, messbare Resultate. Hier findest Du eine Auswahl meiner Arbeiten
 <p class="text-on-surface-variant text-sm">Hosting via GitHub Pages und CMS sind komplett kostenlos – keine laufenden Kosten.</p>
 </div>
 </div>
-
-<!-- Next Step -->
 <div class="bg-surface-container-highest rounded-xl p-5 border border-primary/20 flex items-start gap-4">
 <span class="material-symbols-outlined text-primary mt-0.5 shrink-0">rocket_launch</span>
 <div>
@@ -276,26 +309,59 @@ Echte Projekte, messbare Resultate. Hier findest Du eine Auswahl meiner Arbeiten
 <!-- Description -->
 <p class="text-on-surface-variant leading-relaxed mb-8 max-w-4xl">Für Hauswartung Hecht habe ich eine professionelle Webseite von Grund auf erstellt – auf Mass zugeschnitten für einen 1-Mann-Betrieb in der Zentralschweiz. Die Seite steht, ist live und kann direkt auf Visitenkarten und Marketingmaterialien platziert werden. In einem nächsten Schritt geht es in die Optimierung: SEO und Sichtbarkeit bei Google damit der Betrieb online wächst.</p>
 
-<!-- 3 Kacheln -->
-<div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
-<div class="bg-surface-container-high rounded-xl p-4 md:p-5 border border-outline-variant/20">
+<!-- Mobile carousel -->
+<div class="md:hidden overflow-hidden mb-6" id="cardB-wrapper">
+<div class="flex transition-transform duration-300" id="cardB-carousel">
+<div class="min-w-full px-1">
+<div class="bg-surface-container-high rounded-xl p-5 border border-outline-variant/20 h-full">
 <span class="material-symbols-outlined text-primary mb-3 block">language</span>
 <h3 class="font-headline font-bold mb-1">Webseite erstellt</h3>
 <p class="text-on-surface-variant text-sm">Professionelle Website für einen Hauswart-Betrieb – mobiloptimiert, schnell und auf die Zielgruppe ausgerichtet.</p>
 </div>
-<div class="bg-surface-container-high rounded-xl p-4 md:p-5 border border-outline-variant/20">
+</div>
+<div class="min-w-full px-1">
+<div class="bg-surface-container-high rounded-xl p-5 border border-outline-variant/20 h-full">
 <span class="material-symbols-outlined text-primary mb-3 block">contact_page</span>
 <h3 class="font-headline font-bold mb-1">Visitenkarten-ready</h3>
 <p class="text-on-surface-variant text-sm">Die Basis steht – die Website kann sofort auf Visitenkarten, Fahrzeugen und Flyern eingesetzt werden.</p>
 </div>
-<div class="bg-surface-container-high rounded-xl p-4 md:p-5 border border-outline-variant/20">
+</div>
+<div class="min-w-full px-1">
+<div class="bg-surface-container-high rounded-xl p-5 border border-outline-variant/20 h-full">
 <span class="material-symbols-outlined text-primary mb-3 block">rocket_launch</span>
 <h3 class="font-headline font-bold mb-1">Ohne CMS</h3>
 <p class="text-on-surface-variant text-sm">Die Seite läuft ohne CMS – Änderungen werden direkt durch e-commotion vorgenommen. Einfach, schnell, sauber.</p>
 </div>
 </div>
-
-<!-- Next Step -->
+</div>
+<div class="flex justify-center gap-2 mt-3"><button onclick="goCardB(0)" class="w-6 h-1.5 rounded-full bg-primary transition-all cardB-dot"></button><button onclick="goCardB(1)" class="w-2 h-1.5 rounded-full bg-outline-variant/50 transition-all cardB-dot"></button><button onclick="goCardB(2)" class="w-2 h-1.5 rounded-full bg-outline-variant/50 transition-all cardB-dot"></button></div>
+</div>
+<script>
+let ccB=0;
+function goCardB(i){ccB=i;document.getElementById('cardB-carousel').style.transform='translateX(-'+i*100+'%)';document.querySelectorAll('.cardB-dot').forEach((d,idx)=>{d.classList.toggle('bg-primary',idx===i);d.classList.toggle('w-6',idx===i);d.classList.toggle('bg-outline-variant/50',idx!==i);d.classList.toggle('w-2',idx!==i);});}
+const cwB=document.getElementById('cardB-wrapper');
+let csB=0;
+cwB.addEventListener('touchstart',e=>{csB=e.touches[0].clientX;});
+cwB.addEventListener('touchend',e=>{const d=csB-e.changedTouches[0].clientX;if(Math.abs(d)>40){goCardB(d>0?Math.min(ccB+1,2):Math.max(ccB-1,0));}});
+</script>
+<!-- Desktop grid -->
+<div class="hidden md:grid md:grid-cols-3 gap-4 mb-6">
+<div class="bg-surface-container-high rounded-xl p-5 border border-outline-variant/20">
+<span class="material-symbols-outlined text-primary mb-3 block">language</span>
+<h3 class="font-headline font-bold mb-1">Webseite erstellt</h3>
+<p class="text-on-surface-variant text-sm">Professionelle Website für einen Hauswart-Betrieb – mobiloptimiert, schnell und auf die Zielgruppe ausgerichtet.</p>
+</div>
+<div class="bg-surface-container-high rounded-xl p-5 border border-outline-variant/20">
+<span class="material-symbols-outlined text-primary mb-3 block">contact_page</span>
+<h3 class="font-headline font-bold mb-1">Visitenkarten-ready</h3>
+<p class="text-on-surface-variant text-sm">Die Basis steht – die Website kann sofort auf Visitenkarten, Fahrzeugen und Flyern eingesetzt werden.</p>
+</div>
+<div class="bg-surface-container-high rounded-xl p-5 border border-outline-variant/20">
+<span class="material-symbols-outlined text-primary mb-3 block">rocket_launch</span>
+<h3 class="font-headline font-bold mb-1">Ohne CMS</h3>
+<p class="text-on-surface-variant text-sm">Die Seite läuft ohne CMS – Änderungen werden direkt durch e-commotion vorgenommen. Einfach, schnell, sauber.</p>
+</div>
+</div>
 <div class="bg-surface-container-highest rounded-xl p-5 border border-primary/20 flex items-start gap-4">
 <span class="material-symbols-outlined text-primary mt-0.5 shrink-0">trending_up</span>
 <div>
