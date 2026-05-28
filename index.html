@@ -231,21 +231,21 @@ document.addEventListener('click', function(e) {
 
 <!-- Stats: 2x2 grid -->
 <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6 md:mb-10">
-<div class="bg-primary rounded-xl p-4 md:p-5 text-center">
-<div class="text-3xl md:text-4xl font-black text-white font-headline mb-1">100+</div>
-<div class="text-xs font-label uppercase tracking-wider text-white opacity-80">Keywords Platz 1</div>
+<div class="bg-surface-container-highest rounded-xl p-4 md:p-5 text-center border border-outline-variant/30">
+<div class="text-3xl md:text-4xl font-black text-primary font-headline mb-1">100+</div>
+<div class="text-xs font-label uppercase tracking-wider text-on-surface-variant">Keywords Platz 1</div>
 </div>
-<div class="bg-primary rounded-xl p-4 md:p-5 text-center">
-<div class="text-3xl md:text-4xl font-black text-white font-headline mb-1">8</div>
-<div class="text-xs font-label uppercase tracking-wider text-white opacity-80">Optimierte Shops</div>
+<div class="bg-surface-container-highest rounded-xl p-4 md:p-5 text-center border border-outline-variant/30">
+<div class="text-3xl md:text-4xl font-black text-primary font-headline mb-1">8</div>
+<div class="text-xs font-label uppercase tracking-wider text-on-surface-variant">Optimierte Shops</div>
 </div>
-<div class="bg-primary rounded-xl p-4 md:p-5 text-center">
-<div class="text-3xl md:text-4xl font-black text-white font-headline mb-1">+110%</div>
-<div class="text-xs font-label uppercase tracking-wider text-white opacity-80">Traffic GEO</div>
+<div class="bg-surface-container-highest rounded-xl p-4 md:p-5 text-center border border-outline-variant/30">
+<div class="text-3xl md:text-4xl font-black text-primary font-headline mb-1">+110%</div>
+<div class="text-xs font-label uppercase tracking-wider text-on-surface-variant">Traffic GEO</div>
 </div>
-<div class="bg-primary rounded-xl p-4 md:p-5 text-center">
-<div class="text-3xl md:text-4xl font-black text-white font-headline mb-1">1:1</div>
-<div class="text-xs font-label uppercase tracking-wider text-white opacity-80">Direkt mit Rico</div>
+<div class="bg-surface-container-highest rounded-xl p-4 md:p-5 text-center border border-outline-variant/30">
+<div class="text-3xl md:text-4xl font-black text-primary font-headline mb-1">1:1</div>
+<div class="text-xs font-label uppercase tracking-wider text-on-surface-variant">Direkt mit Rico</div>
 </div>
 </div>
 
@@ -338,70 +338,97 @@ wcw.addEventListener('touchend',e=>{const d=wsx-e.changedTouches[0].clientX;if(M
 <div class="flex transition-transform duration-300 ease-in-out" id="proj-carousel">
 
 <!-- Slide 1: Holzdesign Louis -->
-<div class="min-w-full md:min-w-[50%] px-2">
-<div class="bg-surface-container rounded-2xl border border-outline-variant/20 hover:border-primary/30 transition-colors p-6 md:p-8 h-full">
-<div class="flex items-center gap-4 mb-4">
-<div class="bg-white rounded-xl p-2 flex items-center justify-center w-16 h-12 shrink-0 overflow-hidden">
+<div class="min-w-full md:min-w-[50%] px-1">
+<div class="bg-surface-container rounded-2xl border border-outline-variant/20 hover:border-primary/30 transition-colors p-5 h-full">
+<span class="text-xs font-label text-primary uppercase tracking-widest mb-3 block">Projekt 1 von 3</span>
+<div class="flex items-center gap-3 mb-3">
+<div class="bg-white rounded-lg p-1.5 flex items-center justify-center w-12 h-9 shrink-0 overflow-hidden">
 <img src="/holzdesign-louis-logo.png" alt="Holzdesign Louis" class="w-full h-full object-contain"/>
 </div>
 <div>
-<h3 class="font-headline font-bold text-lg">Holzdesign Louis</h3>
-<a href="https://www.holzdesign-louis.ch" target="_blank" rel="noopener" class="text-primary text-xs hover:underline">www.holzdesign-louis.ch</a>
+<h3 class="font-headline font-bold text-base">Holzdesign Louis</h3>
+<a href="https://www.holzdesign-louis.ch" target="_blank" rel="noopener" class="text-primary text-xs hover:underline">holzdesign-louis.ch</a>
 </div>
 </div>
-<p class="text-on-surface-variant text-sm leading-relaxed mb-4">Professionelle Webseite mit CMS – selbständig pflegbar. Hosting und CMS sind komplett kostenlos, keine laufenden Kosten.</p>
-<div class="flex flex-wrap gap-2">
-<span class="bg-primary/20 text-primary border border-primary/30 px-3 py-1 rounded-full text-xs font-label uppercase tracking-widest">Webseite erstellt</span>
-<span class="bg-primary/20 text-primary border border-primary/30 px-3 py-1 rounded-full text-xs font-label uppercase tracking-widest">CMS</span>
-<span class="bg-primary/20 text-primary border border-primary/30 px-3 py-1 rounded-full text-xs font-label uppercase tracking-widest">SEO in Planung</span>
+<p class="text-on-surface-variant text-xs leading-relaxed mb-3">Webseite mit CMS – kostenlos gehostet, selbständig pflegbar. SEO folgt.</p>
+<div class="flex flex-wrap gap-1.5">
+<span class="bg-primary/20 text-primary border border-primary/30 px-2 py-0.5 rounded-full text-xs font-label uppercase">Webseite</span>
+<span class="bg-primary/20 text-primary border border-primary/30 px-2 py-0.5 rounded-full text-xs font-label uppercase">CMS</span>
+<span class="bg-primary/20 text-primary border border-primary/30 px-2 py-0.5 rounded-full text-xs font-label uppercase">SEO geplant</span>
 </div>
 </div>
 </div>
 
 <!-- Slide 2: Hauswartung Hecht -->
-<div class="min-w-full md:min-w-[50%] px-2">
-<div class="bg-surface-container rounded-2xl border border-outline-variant/20 hover:border-primary/30 transition-colors p-6 md:p-8 h-full">
-<div class="flex items-center gap-4 mb-4">
-<div class="bg-white rounded-xl p-2 flex items-center justify-center w-16 h-12 shrink-0 overflow-hidden">
+<div class="min-w-full md:min-w-[50%] px-1">
+<div class="bg-surface-container rounded-2xl border border-outline-variant/20 hover:border-primary/30 transition-colors p-5 h-full">
+<span class="text-xs font-label text-primary uppercase tracking-widest mb-3 block">Projekt 2 von 3</span>
+<div class="flex items-center gap-3 mb-3">
+<div class="bg-white rounded-lg p-1.5 flex items-center justify-center w-12 h-9 shrink-0 overflow-hidden">
 <img src="https://hauswartung-hecht.ch/Hauswart-hecht-logo.png" alt="Hauswartung Hecht" class="w-full h-full object-contain"/>
 </div>
 <div>
-<h3 class="font-headline font-bold text-lg">Hauswartung Hecht</h3>
-<a href="https://www.hauswartung-hecht.ch" target="_blank" rel="noopener" class="text-primary text-xs hover:underline">www.hauswartung-hecht.ch</a>
+<h3 class="font-headline font-bold text-base">Hauswartung Hecht</h3>
+<a href="https://www.hauswartung-hecht.ch" target="_blank" rel="noopener" class="text-primary text-xs hover:underline">hauswartung-hecht.ch</a>
 </div>
 </div>
-<p class="text-on-surface-variant text-sm leading-relaxed mb-4">Professionelle Webseite für einen 1-Mann-Hauswart-Betrieb in der Zentralschweiz. Live, visitenkarten-ready. Nächster Schritt: SEO.</p>
-<div class="flex flex-wrap gap-2">
-<span class="bg-primary/20 text-primary border border-primary/30 px-3 py-1 rounded-full text-xs font-label uppercase tracking-widest">Webseite erstellt</span>
-<span class="bg-primary/20 text-primary border border-primary/30 px-3 py-1 rounded-full text-xs font-label uppercase tracking-widest">SEO in Planung</span>
+<p class="text-on-surface-variant text-xs leading-relaxed mb-3">Webseite für 1-Mann-Betrieb – live & visitenkarten-ready. SEO in Planung.</p>
+<div class="flex flex-wrap gap-1.5">
+<span class="bg-primary/20 text-primary border border-primary/30 px-2 py-0.5 rounded-full text-xs font-label uppercase">Webseite</span>
+<span class="bg-primary/20 text-primary border border-primary/30 px-2 py-0.5 rounded-full text-xs font-label uppercase">SEO geplant</span>
 </div>
 </div>
 </div>
 
 <!-- Slide 3: Dein Projekt -->
-<div class="min-w-full md:min-w-[50%] px-2">
-<div class="bg-surface-container rounded-2xl border border-dashed border-outline-variant/40 p-6 md:p-8 h-full flex flex-col items-center justify-center text-center min-h-[220px]">
-<span class="material-symbols-outlined text-primary text-4xl mb-3">add_circle</span>
-<h3 class="font-headline font-bold text-lg mb-2">Dein Projekt</h3>
-<p class="text-on-surface-variant text-sm mb-4">Werde das nächste Erfolgsbeispiel von e-commotion.</p>
-<a href="/kontakt/" class="kinetic-gradient text-white font-bold px-5 py-2 rounded-full text-sm">JETZT ANFRAGEN</a>
+<div class="min-w-full md:min-w-[50%] px-1">
+<div class="bg-surface-container rounded-2xl border border-dashed border-outline-variant/40 p-5 h-full flex flex-col items-center justify-center text-center min-h-[180px]">
+<span class="text-xs font-label text-primary uppercase tracking-widest mb-3 block">Projekt 3 von 3</span>
+<span class="material-symbols-outlined text-primary text-3xl mb-2">add_circle</span>
+<h3 class="font-headline font-bold text-base mb-1">Dein Projekt</h3>
+<p class="text-on-surface-variant text-xs mb-3">Werde das nächste Erfolgsbeispiel.</p>
+<a href="/kontakt/" class="kinetic-gradient text-white font-bold px-4 py-2 rounded-full text-xs">JETZT ANFRAGEN</a>
 </div>
 </div>
 
 </div>
 
-<!-- Dots -->
-<div class="flex justify-center gap-2 mt-5" id="proj-dots">
-<button onclick="goProj(0)" class="w-6 h-1.5 rounded-full bg-primary transition-all proj-dot"></button>
-<button onclick="goProj(1)" class="w-2 h-1.5 rounded-full bg-outline-variant/50 transition-all proj-dot"></button>
-<button onclick="goProj(2)" class="w-2 h-1.5 rounded-full bg-outline-variant/50 transition-all proj-dot"></button>
+<!-- Dots mit Projektname -->
+<div class="flex justify-center items-center gap-3 mt-4" id="proj-dots">
+<button onclick="goProj(0)" class="flex items-center gap-1.5 proj-dot-btn">
+<span class="w-6 h-1.5 rounded-full bg-primary transition-all proj-dot"></span>
+<span class="text-xs text-primary font-label proj-label">Holzdesign Louis</span>
+</button>
+<button onclick="goProj(1)" class="flex items-center gap-1.5 proj-dot-btn">
+<span class="w-2 h-1.5 rounded-full bg-outline-variant/50 transition-all proj-dot"></span>
+<span class="text-xs text-on-surface-variant font-label proj-label hidden">Hauswartung Hecht</span>
+</button>
+<button onclick="goProj(2)" class="flex items-center gap-1.5 proj-dot-btn">
+<span class="w-2 h-1.5 rounded-full bg-outline-variant/50 transition-all proj-dot"></span>
+<span class="text-xs text-on-surface-variant font-label proj-label hidden">Dein Projekt</span>
+</button>
 </div>
 </div>
 
 <script>
 let pc=0;
 const ptotal=3;
-function goProj(i){pc=i;document.getElementById('proj-carousel').style.transform='translateX(-'+i*100+'%)';document.querySelectorAll('.proj-dot').forEach((d,idx)=>{d.classList.toggle('bg-primary',idx===i);d.classList.toggle('w-6',idx===i);d.classList.toggle('bg-outline-variant/50',idx!==i);d.classList.toggle('w-2',idx!==i);});}
+const projNames=['Holzdesign Louis','Hauswartung Hecht','Dein Projekt'];
+function goProj(i){
+  pc=i;
+  document.getElementById('proj-carousel').style.transform='translateX(-'+i*100+'%)';
+  document.querySelectorAll('.proj-dot').forEach((d,idx)=>{
+    d.classList.toggle('bg-primary',idx===i);
+    d.classList.toggle('w-6',idx===i);
+    d.classList.toggle('bg-outline-variant/50',idx!==i);
+    d.classList.toggle('w-2',idx!==i);
+  });
+  document.querySelectorAll('.proj-label').forEach((l,idx)=>{
+    l.classList.toggle('hidden',idx!==i);
+    l.classList.toggle('text-primary',idx===i);
+    l.classList.toggle('text-on-surface-variant',idx!==i);
+  });
+}
 const pw=document.getElementById('proj-carousel-wrapper');
 let psx=0;
 pw.addEventListener('touchstart',e=>{psx=e.touches[0].clientX;});
