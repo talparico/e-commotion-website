@@ -345,32 +345,12 @@ wcw.addEventListener('touchend',e=>{const d=wsx-e.changedTouches[0].clientX;if(M
 <div class="overflow-hidden" id="proj-carousel-wrapper">
 <div class="flex transition-transform duration-300 ease-in-out" id="proj-carousel">
 
-<!-- Slide 1: Holzdesign Louis -->
-<div class="min-w-full md:min-w-[50%] px-1">
-<div class="bg-surface-container rounded-2xl border border-outline-variant/20 hover:border-primary/30 transition-colors p-5 h-full">
-<span class="text-xs font-label text-primary uppercase tracking-widest mb-3 block">Projekt 1 von 3</span>
-<div class="flex items-center gap-3 mb-3">
-<div class="bg-white rounded-lg p-1.5 flex items-center justify-center w-12 h-9 shrink-0 overflow-hidden">
-<img src="/holzdesign-louis-logo.png" alt="Holzdesign Louis" class="w-full h-full object-contain"/>
-</div>
-<div>
-<h3 class="font-headline font-bold text-base">Holzdesign Louis</h3>
-<a href="https://www.holzdesign-louis.ch" target="_blank" rel="noopener" class="text-primary text-xs hover:underline">holzdesign-louis.ch</a>
-</div>
-</div>
-<p class="text-on-surface-variant text-xs leading-relaxed mb-3">Webseite mit CMS – kostenlos gehostet, selbständig pflegbar. SEO folgt.</p>
-<div class="flex flex-wrap gap-1.5">
-<span class="bg-primary/20 text-primary border border-primary/30 px-2 py-0.5 rounded-full text-xs font-label uppercase">Webseite</span>
-<span class="bg-primary/20 text-primary border border-primary/30 px-2 py-0.5 rounded-full text-xs font-label uppercase">CMS</span>
-<span class="bg-primary/20 text-primary border border-primary/30 px-2 py-0.5 rounded-full text-xs font-label uppercase">SEO geplant</span>
-</div>
-</div>
-</div>
+
 
 <!-- Slide 2: Hauswartung Hecht -->
 <div class="min-w-full md:min-w-[50%] px-1">
 <div class="bg-surface-container rounded-2xl border border-outline-variant/20 hover:border-primary/30 transition-colors p-5 h-full">
-<span class="text-xs font-label text-primary uppercase tracking-widest mb-3 block">Projekt 2 von 3</span>
+<span class="text-xs font-label text-primary uppercase tracking-widest mb-3 block">Projekt 1 von 2</span>
 <div class="flex items-center gap-3 mb-3">
 <div class="bg-white rounded-lg p-1.5 flex items-center justify-center w-12 h-9 shrink-0 overflow-hidden">
 <img src="https://hauswartung-hecht.ch/Hauswart-hecht-logo.png" alt="Hauswartung Hecht" class="w-full h-full object-contain"/>
@@ -391,7 +371,7 @@ wcw.addEventListener('touchend',e=>{const d=wsx-e.changedTouches[0].clientX;if(M
 <!-- Slide 3: Dein Projekt -->
 <div class="min-w-full md:min-w-[50%] px-1">
 <div class="bg-surface-container rounded-2xl border border-dashed border-outline-variant/40 p-5 h-full flex flex-col items-center justify-center text-center min-h-[180px]">
-<span class="text-xs font-label text-primary uppercase tracking-widest mb-3 block">Projekt 3 von 3</span>
+<span class="text-xs font-label text-primary uppercase tracking-widest mb-3 block">Projekt 2 von 2</span>
 <span class="material-symbols-outlined text-primary text-3xl mb-2">add_circle</span>
 <h3 class="font-headline font-bold text-base mb-1">Dein Projekt</h3>
 <p class="text-on-surface-variant text-xs mb-3">Werde das nächste Erfolgsbeispiel.</p>
@@ -405,13 +385,9 @@ wcw.addEventListener('touchend',e=>{const d=wsx-e.changedTouches[0].clientX;if(M
 <div class="flex justify-center items-center gap-3 mt-4" id="proj-dots">
 <button onclick="goProj(0)" class="flex items-center gap-1.5 proj-dot-btn">
 <span class="w-6 h-1.5 rounded-full bg-primary transition-all proj-dot"></span>
-<span class="text-xs text-primary font-label proj-label">Holzdesign Louis</span>
+<span class="text-xs text-primary font-label proj-label">Hauswartung Hecht</span>
 </button>
 <button onclick="goProj(1)" class="flex items-center gap-1.5 proj-dot-btn">
-<span class="w-2 h-1.5 rounded-full bg-outline-variant/50 transition-all proj-dot"></span>
-<span class="text-xs text-on-surface-variant font-label proj-label hidden">Hauswartung Hecht</span>
-</button>
-<button onclick="goProj(2)" class="flex items-center gap-1.5 proj-dot-btn">
 <span class="w-2 h-1.5 rounded-full bg-outline-variant/50 transition-all proj-dot"></span>
 <span class="text-xs text-on-surface-variant font-label proj-label hidden">Dein Projekt</span>
 </button>
@@ -420,8 +396,8 @@ wcw.addEventListener('touchend',e=>{const d=wsx-e.changedTouches[0].clientX;if(M
 
 <script>
 let pc=0;
-const ptotal=3;
-const projNames=['Holzdesign Louis','Hauswartung Hecht','Dein Projekt'];
+const ptotal=2;
+const projNames=['Hauswartung Hecht','Dein Projekt'];
 function goProj(i){
   pc=i;
   document.getElementById('proj-carousel').style.transform='translateX(-'+i*100+'%)';
